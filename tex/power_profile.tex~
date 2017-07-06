@@ -1,0 +1,21 @@
+In this section we review a methodology for establishing a power profile which maps each instruction's and micro-architectural element's power consumption contribution, first described by Park et al \cite{5401086}. Our aim is to use the model to obtain a profile which enables informed approximation decisions, of two types: 
+
+\begin{itemize}
+\item Software visible approximations: based on instructions' power consumption model, determine which instruction to target for approximations at ISA level; e.g., by applying voltage scaling or bitwise masking techniques which directly affect intructions' operation.
+\item Micro-architectural approximations: based on micro-architectural elements' power consumption model, determine where to apply approximation methods invisible to the ISA; e.g., arithmetic memoization or data cache load value prediction. 
+\end{itemize}
+
+The former approximation type is directly associated with an instruction (e.g., "add two register operands'') while the latter can be applied to a wide class of instructions (e.g., all types of "load'' instructions). For both types, the aim is to use the power profile as a heuristic measure to guide approximations, rather than go through lenghty approximation-evaluation iterations.
+\par Park et al's power profile method can be applied to any cycle-accurate simulator/description, and its accuracy is proportional to the granularity of \textit{a priori} baseline power consumption evaluations; in our experiments, we use a Register Transfer Level (RTL) implementation in Hardware Description Language (HDL). Albeit other power modeling approaches can be applied at several abstraction levels (e.g., within functional simulators), we don't consider the fact that our approach is predicated on cycle-accurate level a limitation, due to the domain our model targets: ISA approximations are necessarily applied at very low levels of granularity, after the base design's functional correctness is guaranteed. 
+Our methodology is based on four steps:
+
+\begin{enumerate}
+\item Using representative benchmarks, a baseline power consumption analysis is performed for each micro-architectural element. i.e., each pipeline stage, data and instruction caches, etc. This analysis can be performed by FPGA power estimation simulations or by CMOS libraries simulation tools. This step creates a power \textit{weight} for each stage.
+\item The processor description is annotated with \textit{Hamming distance calculators} and \textit{instruction monitors}, applied to all design registers. A Hamming counter array is associated with each stage, indexed by instruction type.
+\item Simulation is performed with representative benchmarks and/or desired approximated application. At each cycle, the total Hamming distance for each stage is incremented in its corresponding array, indexed by the instruction monitor. This process is depicted in Fig. \ref{}.
+\item Each stage's power weight is applied to its Hamming array, and these are collected into a power matrix, where rows represent instruction class and columns represent stage. This matrix is the power profile, depicted in Fig. \ref{}. 
+\end{enumerate}
+
+Applying power weights to each stage's array compensates for any mismatch between number of affected registers and power consumption due to combinational logic. An Arithmetic and Logic Unit (ALU), for example, typically modifies only a few registers (flags in status registers and result to next pipeline stage), whilst possessing several parallel complex combinational paths, responsible for a gret deal of power consumption. Applying the power weight ensures that each bit modification measured during simulation is representative of its stage's power contribution.
+%\par Our method is similar to the methodology previously described in \cite{5401086}, with one noticeable difference: by ensuring our power weight calculation is performed post floorplanning and routing
+%, our method provides a more accurate model of each stage's power contribution at cycle-accurate level.

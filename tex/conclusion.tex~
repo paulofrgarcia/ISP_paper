@@ -1,0 +1,8 @@
+\section{Conclusions}\label{sec:concl}
+We have described a methodology for the optimisation of dataflow networks, according to patterns often
+found in computer vision systems. This methodology and
+associated techniques will be of use for computer vision
+algorithm designers who must optimise their implementations
+to meet some metric budget and for compiler designers in identifying optimisation bottlenecks and possible solutions.
+\par Our refactoring methodology, applying transformations to a complex algorithm, resulted in 31\% power consumption reduction and a reduction of 10.36, 31 and 6.4 percentage points in LUTs, BRAMs and DSPs resources usage, respectively. 
+

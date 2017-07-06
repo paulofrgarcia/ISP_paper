@@ -1,0 +1,198 @@
+\section{Case Study: Meanshift Tracking}
+
+\begin{figure*}[tb]
+  \centering
+  \includegraphics[width=1.5\columnwidth]{img/mainLoop.png}
+  \caption{Meanshift Tracking CAL dataflow process network (final optimised version).}
+  \label{fig:mainLoop}
+\end{figure*}
+
+\subsection{Meanshift on FPGA}
+
+
+
+
+
+
+
+
+
+
+We use Meanshift tracking as a use case for applying our methodologies. Meanshift tracking is an object tracking algorithm; given an object's initial position is the firt frame, it tracks the object's position in subsequent frames. We use person tracking data sets in our experiments, and have implemented the complete algorithm on a Xilinx Zedboard, connected to an external camera.
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.90\columnwidth]{img/meanshifttrack.png}\\
+  \caption{Example of single target mean shift visual
+    tracking.}\label{fig:exmple_meanshift_track}
+%   \vspace{-0.7cm}
+\end{figure}
+%----------------------------
+
+Mean shift~\cite{ComRamMee03} is a feature-space analysis technique
+for locating the maxima of a density function. An example of applying
+mean shift to image processing for visual tracking is shown in
+\Fig{exmple_meanshift_track}. The target is successfully tracked from
+the initial frame on the left, to the final frame on the right. The
+algorithm is a kernel based method normally applied using a symmetric
+Epanechnikov kernel within a pre-defined elliptical or rectangular
+window. The target region of an initial image is modelled with a
+probability density function (a colour histogram) and identifies a
+candidate position in the next image by finding the minimum distance
+between models using an iterative procedure. A summary is given in
+Algorithm~\ref{alg:meanshift-algo}.
+
+\begin{algorithm}[t]
+ \footnotesize
+ \KwIn{Target position $y_0$ on $1^{st}$ frame\;}
+ Compute Epanechnikov kernel\;
+ Calculate \emph{target} color model $q_{u}(y_0)$ \\
+  \hspace{10mm}  (\eg using RGB color histogram)\;
+ \Repeat{end of sequence}{
+  \KwIn{Receive next frame\;}
+  Calculate \emph{target candidate} color model: $p_{u}(y_0)$\;
+  Compute similarity function $\rho(y)$ between $q_{u}(y_0)$ \& $p_{u}(y_0)$\;
+  \Repeat{$|y_1-y_0| < \epsilon$
+            (near zero displacement)}{
+    Derive the weights $\omega_{i}$ for each pixel \\
+     \hspace{15mm}   in \emph{target candidate} window\;
+    Compute new target displacement $y_1$\;
+    Compute new candidate colour model $q_{u}(y_1)$\;
+    Evaluate similarity function $\rho(y)$ between $q_{u}(y_0)$ \& $p_{u}(y_1)$\;
+    \While {$\rho(y_1) < \rho(y_0)$}{
+  	    Do $y_1 \leftarrow 0.5(y_0+y_1)$\;
+  	    Evaluate $\rho(y)$ between $q_{u}(y_0)$ \& $p_{u}(y_1)$\;
+    }
+  }
+  \KwOut{$y_1$ \emph{(Target position for current frame)}\;}
+  Set $y_0 \leftarrow y_1$ for next frame\;
+}
+\caption{Summary of Mean-shift tracking}
+\label{alg:meanshift-algo}
+\end{algorithm}
+\normalsize
+
+\par Meanshift tracking exhibits several of the properties of image processing/computer vision that hinder automatic optimisations. It is a dynamic algorithm, i.e., only worst case estimations of the time require for execution per frame can be performed, due to iterative loops with non-trivial termination conditions. It consists of several different components, each with very different levels of complexity. It is implemented as a network with feedback loops. Fig. \ref{fig:mainLoop} depicts the full algorithm, implemented in CAL. The complete code is available from \url{https://github.com/dbhowmik/CAL_IM_FUNC/tree/master/Higher%20Level%20Algorithms}.
+
+\par Our implementation targets low-power FPGA implementations, and has been prototyped on a Xilinx Zedboard (Zynq 7020 chip). Only integer calculations are performed, and our prototype uses 320x240 frames supplied by an external camera. Software on the attached processor, which is used to feed the video from the FPGA to a remote computer over ethernet, supplies the initial position (i.e., which object to track) to the Meanshift implementation.
+
+
+
+
+\subsection{Meanshift transformations}
+
+%how was implemented, i.e., without optimisations
+Our initial implementation of Meanshift did not consider any premature optimisations; rather, we attempted to be as faithful to the algorithmic description in Algorithm~\ref{alg:meanshift-algo} as possible, following the dataflow paradigm; i.e., each aspect of computations is performed by parallel actors.
+\par The "CAL\_bin" actor depicted in Fig. \ref{fig:mainLoop} is the largest (both in code length and in FPGA resource usage) for two reasons: apart from computations, it also stores the current frame (hence, has the biggest memory requirements in the network) and is responsible for managing network state (e.g., is it processing the first or subsequent frames).
+%compiler cannot optimise
+\par We inspected compilation logs (both for CPU and FPGA backends) to ensure that no optimisations could be applied by the dataflow compiler. Subsequently, we applied our optimisation methodology and iteratively refined the implementation. At each iteration, we measured power consumption and performance (details are described in Section \ref{sec:result}). We do not show detailed code/block diagram examples from Meanshift in this section, as the examples depicted in Section \ref{sec:algo-transform} are either identical or sufficiently similar to provide the reader with the necessary understanding.
+\par The first optimisation applied was the transformation described in sub-section \ref{sec:trans3}: actor fusion. We observed that the actor responsible for storing the Epanechnikov kernel and providing the results to "CAL\_mModel" actor, "K\_Array" (no longer depicted in the final version in Fig. \ref{fig:mainLoop}) performed with the same speed and latency as the following actor ("CAL\_mModel"), at a processing speed superior to the rate of data availability. Hence, we clearly identified an over-optimised pipeline which could be fused to reduce size and power.
+\par The second optimisation applied was the transformation described in sub-section \ref{sec:trans1}: streamlined memory usage. We observed that one of the computations in the "update\_weight" actor
+read data from input sources, stored them in local arrays, then processed outputs. After refinement, the number of required input data and the output data dependencies became explicit in the action declaration (i.e., performing a "pure" computation), removing the need for local arrays.
+\par The final optimisation applied was the transformation described in sub-section \ref{sec:trans2}: back-propagation of bit width requirements, and the one with the most substantial power/size gains. In the original un-optimised version, the "CAL\_bin" actor stored the complete current frame; 3 times 320x240 8 bit values (one per RGB colour channel). These values were passed to a "histogram" actor which binned them according to value, performing the "Calculate \emph{target candidate} color model: $p_{u}(y_0)$" step in the algorithm. After the transformation, previously depicted in Fig. \ref{fig:optimised_bits}, current frame storage required only 4 bits per value. Actors were subsequently fused.
+
+
+%which transformations we applied
+
+
+
+
+\section{Experimental results}\label{sec:result}
+
+At each iteration in our optimisation methodology, we characterized performance at both actor and network level using RTL simulation in Xilinx Vivado Design suite. We also calculated power consumption, at actor granularity, using Xilinx Power Analyzer embedded in the Vivado suite, reporting high confidence level. Simulation results were verified through physical implementation on a Xilinx Zedboard.
+
+\par Table \ref{tab:microresults} depicts power and resource usage results for the examples described in Section \ref{sec:algo-transform}. Because the impact of optimisations is highly dependent on their coverage, i.e., what percentage of an actor is affected by the transformation, it is hard to accurately quantify transformation impact without applying them to a large collection of benchmark programs, which is not feasible without automating refactoring (we are currently working towards developing new static analysis technologies and refactoring tools; in future work, we will report more detailed transformation results across open-source CAL repositories). For now, the results in Table \ref{tab:microresults} should suffice as proof of concept of the proposed transformations' impact.
+
+
+\begin{table*}[t]
+  \caption{Micro benchmarks results}
+  \label{tab:microresults}
+  \begin{tabular}{l c c c c}
+\toprule
+   Refinement & Original power & Refined power & Original usage & Refined usage\\
+\hline
+    Streamlined memory usage & 0.008 W & 0.006 W & 783 FF \& 2012 LUTs & 648 FF \& 1593 LUTs \\
+    Bit width back-propagation & 0.125 W  & 0.096 W & 84 BRAMs & 62 BRAMs\\
+    Actor fusion & 0.017 W & 0.016 W & 190 FF \& 690 LUTs & 170 FF \& 511 LUTs\\
+\bottomrule
+  \end{tabular}
+\end{table*}
+
+
+
+\par In order to provide context to transformation results, Table \ref{tab:meanresultspower} depicts power consumption for Meanshift versions after successive refinements applications and Table \ref{tab:meanresultsize} depicts FPGA resource usage. Peak performance (maximum clock frequency and achievable frames per second) were unaltered by transformations, at 81MHz and 145fps, respectively.
+These results provide designers with a quantitative view of how the aforementioned transformations can contribute to decrease resource usage and power consumption in a complete system. 
+
+
+
+
+
+\begin{table*}[t]
+  \caption{Meanshift Power consumption. V1: original un-optimised version (baseline). V2: after actor fusion and streamlined memory usage. V3: after actor fusion, streamlined memory usage and back-propagation of bit width requirements}
+  \label{tab:meanresultspower}
+  \begin{tabular}{l c c c c c c c c c}
+\toprule
+     & Total (W) & Static (W) & Dynamic (W) & Clocks (W) & Signals (W) & Logic (W) & BRAMS (W) & DSP (W) & I/O (W) \\
+\hline
+    V1 & 0.461 & 0.129 & 0.331 & 0.112 & 0.028 & 0.015 & 0.172 & 0.001 & 0.002 \\
+    V2 & 0.356 & 0.128 & 0.228 & 0.070 & 0.022 & 0.011 & 0.123 & 0.000 & 0.002 \\
+    V3 & 0.321 & 0.127 & 0.194 & 0.070 & 0.020 & 0.011 & 0.091 & 0.000 &  0.002 \\
+\bottomrule
+  \end{tabular}
+\end{table*}
+
+
+\begin{table*}[t]
+  \caption{Meanshift FPGA usage on Xilinx Zedboard (Zynq 7020). V1: original un-optimised version (baseline). V2: after actor fusion and streamlined memory usage. V3: after actor fusion, streamlined memory usage and back-propagation of bit width requirements}
+  \label{tab:meanresultsize}
+  \begin{tabular}{l c c c c }
+\toprule
+     & Registers & LUTs & BRAM & DSP  \\
+\hline
+    V1 & 3792 (3.00\%)  & 9603 (18.00\%) & 111 (79.00\%) & 22 (10.00\%)  \\
+    V2 & 2189 (2.00\%) & 4679 (8.00\%) & 124 (88.00\%) & 8 (3.60\%)  \\
+    V3 & 2490 (2.34\%)  & 4066 (7.64\%)  & 67 (48.00\%) & 8 (3.60\%)  \\
+\bottomrule
+  \end{tabular}
+\end{table*}
+
+
+\subsection{Discussion}
+
+Our results show that several optimisations which affect power consumption and resource usage can be applied, without compromising functionality or performance: this is certainly desirable for the design of power/size constrained vision systems. However, these cannot be automatically applied by optimising compilers. Two main insights are gained from our experiments: firstly, concerned designers must be aware of manual or semi-automated refactoring methodologies, beyond what is freely given by the compiler. Secondly, compiler optimisation technology, despite great advances in recent years, must still benefit from improvements.
+\par Manual (or semi-automated) refactoring can be applied by simulation-refinement loops, where performance estimation can expose over-optimised sub-systems, consuming unnecesary power and resources (e.g., our actor fusion example). Manual code inspection can reveal refactoring opportunities which minimze resource usage, either through local code optimisation (e.g., our streamlined memory usage example) or through cross sub-system code optimisation (e.g., our back propagation example). Both of these can be aided by automated profilers (e.g., the CAL-Orcc framework supplies Turnus \cite{brunei2013turnus}) and by static code analysers (we are currently pursuing new techniques for static dataflow analysis). The methodologies and transformations we have presented should act as a guide for image processing engineers to perform such optimisations on their systems.
+\par Optimisation passes in contemporary compilers are limited by language semantics. Static dataflow (i.e., without loops, stateless) is far simpler to analyse and subsequently optimise than dynamic dataflow (e.g., CAL). However, most real-world code relies heavily on dynamic features and is typically composed from third-party sub-systems. Hence, it is necessary to extend optimisation passes with more sophisticated static analysis capabilities that can infer memory waste and cross sub-system optimisations. The methodologies and transformations we have presented should aid compiler designers in identifying optimisation bottlenecks and possible solutions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\vspace{20mm}

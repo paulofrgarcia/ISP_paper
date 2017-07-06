@@ -1,0 +1,139 @@
+\section{Area-Energy Aware Implementation Refinements}\label{sec:algo-transform}
+
+
+Our methodology consists of a profiling-refactoring loop, where profiling identifies optimisation opportunities and refactoring applies code transformations to optimise the design. Profiling is performed through simulations, aided by automated tools, and focuses on identifying optimisations which are not discovered automatically by an optimising compiler due to nuances in dataflow semantics; hence why this methodology should be of interest to computer vision designers. Because we target FPGA implementations, we focus our analysis on area and power optimisations, rather than performance which has been addressed in detail by related work. All examples are in Orcc-CAL dataflow language; Section \ref{sec:result} depicts experimental results for every refactoring method presented in this section.
+
+%\pgcomment{We need to connect this with examples from dataflow. We can use small parts of MeanShift here, then connect everything in the next section.}
+
+\subsection{Streamlined Memory Usage}\label{sec:trans1}
+
+Every actor's internal memory requirements are eventually mapped to FPGA logic (i.e., LUTs or BRAMs) and consume precious space and power. Hence, it is essential to minimize memory requirements without jeopardizing the algorithm. Our analysis of open-source code repositories \cite{} reveals several cases where actors can be refactored to minimize memory usage: a recurring design pattern is the use of unnecessary local arrays. Consider the following code example, which calculates the mean value of an array of pixels:
+
+\begin{lstlisting}[language=C++,commentstyle=\color{blue},caption=Unnecessary array for pixel mean calculation, label=mean1]
+int buffer[100];
+int count := 0; 
+getValues: action Stream:[value] ==>  	
+do			
+	buffer[count] := value;				
+	count := count + 1; 
+end	
+filter: action ==> mean:[val]
+var int val
+do
+	val := buffer[0] + buffer[1] +...
+	val := val/100; 
+end
+\end{lstlisting}
+
+This is a typical design pattern, where required values are read from input sources, stored in local arrays, then processed (action scheduling logic is not depicted). Now consider the following refactored code:
+
+\begin{lstlisting}[language=C++,commentstyle=\color{blue},caption=Pixel mean calculation with streamlined memory usage, label=mean2]
+filter: action Stream:[values] repeat 100 
+==> mean:[(val[0]+val[1]=...)/100] 	
+do			
+end	
+\end{lstlisting}
+
+In this version, the number of required input data and the output data dependencies are explicit in the action declaration, removing the need for local arrays. Data is instead stored in the communication FIFOs used to link actors (i.e., input stream). 
+\par This optimisation is not automatically applied by optimising compilers because in the first version, the same data is used for read and write in two different actions. Automatic refactoring cannot be safely applied, unless the compiler is capable of dertemining that: (1) action firing order is temporaly consistent; (2) no other actions use this data; (3) the output calculation can be re-written in a (syntactically/semantically valid) single line. Precisely ensuring these conditions is still beyond compilers' static analysis capabilities, for languages with such varied semantics such as CAL. 
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\columnwidth]{img/naive_bits.png}
+  \caption{Actor composition (frame storage and histogram) with bit width usage highlighted.}
+  \label{fig:naive_bits}
+\end{figure}
+
+
+\subsection{Back-propagation of Bit Width Requirements}\label{sec:trans2}
+A pervasive pattern in several image processing operations
+is quantisation, where values (typically pixel color/luminosity
+components or processed data such as histograms) are scaled
+down for normalization or other purposes. When values are
+quantized, lower resolution components (i.e., least significant
+bits in binary representations) are not used for subsequent operations. Optimising compilers can reduce data dimensionality
+locally, i.e., within a function or an actor, but are not capable
+of extrapolating these optimisations to broaden the range of
+optimised areas. This is especially prevalent in the dataflow
+paradigm, where quantization is performed in one actor, whilst
+the optimization opportunities are present in another; because
+communication between actors is performed through FIFO
+channels which establish data size, the compiler fails to infer
+the optimization. Fig. \ref{fig:naive_bits} presents a depiction of this pattern, where the second actor (histogram) performs the following computation to determine the histogram bin:
+
+\begin{lstlisting}[language=C++,commentstyle=\color{blue},caption=Histogram computation, label=histogram]
+//uint(size=8)
+procedure findBin(uint R, uint G, uint B)
+var
+int r, int g, int b   	 
+begin	
+  r := R >> 4;
+  g := G >> 4;
+  b := B >> 4;
+  binValue := r + (g << 4) + (b << 8);
+end    	
+\end{lstlisting}
+
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\columnwidth]{img/optimised_bits.png}
+  \caption{Actor composition (frame storage and histogram) after bit width requirements back-propagation.}
+  \label{fig:optimised_bits}
+\end{figure}
+
+\par In our approach, we identify code sections where unnecessary resolution is used, and we trace the flow of data across the network to determine where to reduce bit widths. In the previous histogram bin finding function, the lowest 4 bits of each datum are not required for computation and can be removed. Back propagating new width requirements, the network can be refactored into the one depicted in Fig. \ref{fig:optimised_bits}.   
+\par This optimisation is not automatically applied by optimising compilers because data dependencies are not calculated outside actors' boundaries. Safely applying this optimisation would require a compiler to statically determine that: (1) data sources are not used in any other calculation; (2) the communication channel is not used for any other data, and; (3) the shifting operation could safely be applied before data storage.
+
+
+
+\subsection{Actor Fusion}\label{sec:trans3}
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\columnwidth]{img/naive_threshold.png}
+  \caption{Over-optimised pipeline resulting in area/energy costs.}
+  \label{fig:naive_threshold}
+\end{figure}
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\columnwidth]{img/optimised_threshold.png}
+  \caption{Optimised pipeline after actor fusion.}
+  \label{fig:optimised_threshold}
+\end{figure}
+
+Another pervasive pattern in image processing, especially
+when composing systems using third-party code components,
+is that separation of concerns (i.e., dedicating actors to specific tasks) leads to over-optimizations. Consider the example
+depicted in Fig. \ref{fig:naive_threshold}, where pipeline consists of an actor
+performing a smoothing filter operation followed by an actor
+performing binary thresholding. This sequential composition of operations results in a processing pipeline which is not necessarily balanced in function of data throughput. Consider that the smoothing filter requires S time units for operation and that the binary threshold requires T time units for operation. If latency between sequencial data arrival is greater than $S+T$ time units, temporal parallelism offered by the pipeline does not offer any performance improvement. Instead, both actors can be fused in one that takes $S+T$ time units to compute, decreasing space and power costs, as depicted in Fig. \ref{fig:optimised_threshold}.
+\par This optimisation is not automatically applied by optimising compilers because it requires some sort of profiling to determine execution times and throughputs. Furthermore, even after profiling, a compiler would have to be able to ensure that: (1) profiled execution times would remain constant for any data input, and; (2) merging the two actors would not break the intended behaviour. If any of the two actors possessed additional ports, automatic optimisation would be further complicated, as the compiler would have to ensure that other functionalities remained unaffected by actor fusion.
+
+
+%\subsection{Overlapping Approximations}
+%Approximate computing, i.e., transforming exact operations
+%into approximated ones in order to trade accuracy for power
+%savings, in applications resiliant to inaccurate results, is now
+%common-place in computer vision. We do not focus on approximate computing techniques; rather, we exploit a side-effect of approximations: once one approximation has been
+%applied, it is possible to apply other ones without further loss
+%of performance or accuracy.
+%\par 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

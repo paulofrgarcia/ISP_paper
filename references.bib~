@@ -1,0 +1,2288 @@
+@inproceedings{Wang:2013:MPM:2463209.2488748,
+ author = {Wang, Yuxin and Li, Peng and Zhang, Peng and Zhang, Chen and Cong, Jason},
+ title = {Memory Partitioning for Multidimensional Arrays in High-level Synthesis},
+ booktitle = {Proceedings of the 50th Annual Design Automation Conference},
+ series = {DAC '13},
+ year = {2013},
+ isbn = {978-1-4503-2071-9},
+ location = {Austin, Texas},
+ pages = {12:1--12:8},
+ articleno = {12},
+ numpages = {8},
+ doi = {10.1145/2463209.2488748},
+ acmid = {2488748},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {high-level synthesis, memory padding, memory partitioning},
+}
+
+
+@inproceedings{ali_using_2015,
+	title = {Using hardware parallelism for reducing power consumption in video streaming applications},
+	
+	urldate = {2016-03-24},
+	booktitle = {Reconfigurable {Communication}-centric {Systems}-on-{Chip} ({ReCoSoC}), 2015 10th {International} {Symposium} on},
+	publisher = {IEEE},
+	author = {Ali, Karim and Ben Atitallah, Rabie and Fakhfakh, Nizar and Dekeyser, Jean-Luc},
+	year = {2015},
+	pages = {1--7}
+}
+
+@article{chen_high_2016,
+	title = {High speed vision processor with reconfigurable processing element array based on full-custom distributed memory},
+	volume = {55},
+	issn = {0021-4922, 1347-4065},
+	
+	doi = {10.7567/JJAP.55.04EF08},
+	number = {4S},
+	urldate = {2016-03-24},
+	journal = {Japanese Journal of Applied Physics},
+	author = {Chen, Zhe and Yang, Jie and Shi, Cong and Qin, Qi and Liu, Liyuan and Wu, Nanjian},
+	month = apr,
+	year = {2016},
+	pages = {04EF08}
+}
+
+@inproceedings{dessouky_adaptive_2014,
+	title = {Adaptive {Dynamic} {On}-chip {Memory} {Management} for {FPGA}-based reconfigurable architectures},
+	
+	urldate = {2016-03-24},
+	booktitle = {Field {Programmable} {Logic} and {Applications} ({FPL}), 2014 24th {International} {Conference} on},
+	publisher = {IEEE},
+	author = {Dessouky, Ghada and Klaiber, Michael J. and Bailey, Donald G. and Simon, Stefan},
+	year = {2014},
+	pages = {1--8}
+}
+
+@article{memik_analysis_2003,
+	title = {Analysis and {FPGA} implementation of image restoration under resource constraints},
+	volume = {52},
+	
+	number = {3},
+	urldate = {2016-03-24},
+	journal = {Computers, IEEE Transactions on},
+	author = {Memik, Seda Ogrenci and Katsaggelos, Aggelos K. and Sarrafzadeh, Majid},
+	year = {2003},
+	pages = {390--399}
+}
+
+@inproceedings{molin_fpga_2015,
+	title = {{FPGA} emulation of a spike-based, stochastic system for real-time image dewarping},
+	
+	urldate = {2016-03-24},
+	booktitle = {Circuits and {Systems} ({MWSCAS}), 2015 {IEEE} 58th {International} {Midwest} {Symposium} on},
+	publisher = {IEEE},
+	author = {Molin, Jamal Lottier and Figliolia, Tomas and Sanni, Kayode and Doxas, Isidoros and Andreou, Andreas and Etienne-Cummings, Ralph},
+	year = {2015},
+	pages = {1--4}
+}
+
+@article{mondal_fpga_2016,
+	title = {{FPGA} based accelerated 3D affine transform for real-time image processing applications},
+	volume = {49},
+	issn = {00457906},
+	
+	doi = {10.1016/j.compeleceng.2015.04.017},
+	language = {en},
+	urldate = {2016-03-24},
+	journal = {Computers \& Electrical Engineering},
+	author = {Mondal, Pulak and Biswal, Pradyut Kumar and Banerjee, Swapna},
+	month = jan,
+	year = {2016},
+	pages = {69--83}
+}
+
+@inproceedings{pandey_fpga-based_2015,
+	title = {An {FPGA}-{Based} {Architecture} for {Local} {Similarity} {Measure} for {Image}/{Video} {Processing} {Applications}},
+	isbn = {978-1-4799-6658-5},
+	
+	doi = {10.1109/VLSID.2015.63},
+	urldate = {2016-03-24},
+	publisher = {IEEE},
+	author = {Pandey, J.G. and Karmakar, A. and Shekhar, C. and Gurunarayanan, S.},
+	month = jan,
+	year = {2015},
+	pages = {339--344}
+}
+
+@inproceedings{siddiqui_ippro:_2014,
+	title = {{IPPro}: {FPGA} based image processing processor},
+	shorttitle = {{IPPro}},
+	
+	urldate = {2016-03-24},
+	booktitle = {Signal {Processing} {Systems} ({SiPS}), 2014 {IEEE} {Workshop} on},
+	publisher = {IEEE},
+	author = {Siddiqui, Fahad Manzoor and Russell, Matthew and Bardak, Burak and Woods, Roger and Rafferty, Karen},
+	year = {2014},
+	pages = {1--6}
+}
+
+@article{stevanovic_control_2015,
+	title = {A {Control} {System} and {Streaming} {DAQ} {Platform} with {Image}-{Based} {Trigger} for {X}-ray {Imaging}},
+	volume = {62},
+	issn = {0018-9499, 1558-1578},
+	
+	doi = {10.1109/TNS.2015.2425911},
+	number = {3},
+	urldate = {2016-03-24},
+	journal = {IEEE Transactions on Nuclear Science},
+	author = {Stevanovic, Uros and Caselle, Michele and Cecilia, Angelica and Chilingaryan, Suren and Farago, Tomas and Gasilov, Sergey and Herth, Armin and Kopmann, Andreas and Vogelgesang, Matthias and Balzer, Matthias and Baumbach, Tilo and Weber, Marc},
+	month = jun,
+	year = {2015},
+	pages = {911--918}
+}
+
+@article{torres-huitzil_areatime_2014,
+	title = {Areatime {Efficient} {Implementation} of {Local} {Adaptive} {Image} {Thresholding} in {Reconfigurable} {Hardware}},
+	volume = {42},
+	
+	number = {4},
+	urldate = {2016-03-24},
+	journal = {ACM SIGARCH Computer Architecture News},
+	author = {Torres-Huitzil, Cesar and Nuño-Maganda, Marco Aurelio},
+	year = {2014},
+	pages = {33--38}
+}
+
+@article{wang_real-time_2015,
+	title = {Real-{Time} {High}-{Quality} {Stereo} {Vision} {System} in {FPGA}},
+	volume = {25},
+	issn = {1051-8215, 1558-2205},
+
+	doi = {10.1109/TCSVT.2015.2397196},
+	number = {10},
+	urldate = {2016-03-24},
+	journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+	author = {Wang, Wenqiang and Yan, Jing and Xu, Ningyi and Wang, Yu and Hsu, Feng-Hsiung},
+	month = oct,
+	year = {2015},
+	pages = {1696--1708}
+}
+
+@ARTICLE{7111880,
+author={J. Schlessman and M. Wolf},
+journal={Computer},
+title={Tailoring design for embedded computer vision applications},
+year={2015},
+volume={48},
+number={5},
+pages={58-62},
+keywords={computer vision;embedded systems;architectural simulation;architectural tradeoffs;embedded computer vision applications;numerical dynamic range analysis;tailoring design;Algorithm design and analysis;Bandwidth allocation;Computer vision;MATLAB;Memory management;Signal processing algorithms;Embedded computer vision;camera networks;computer vision;design space exploration;design tradeoffs;hardware and software codesign},
+doi={10.1109/MC.2015.145},
+ISSN={0018-9162},
+month={May},}
+
+
+@article{shi20141000,
+  title={A 1000 fps Vision Chip Based on a Dynamically Reconfigurable Hybrid Architecture Comprising a PE Array Processor and Self-Organizing Map Neural Network},
+  author={Shi, Cong and Yang, Jie and Han, Ye and Cao, Zhongxiang and Qin, Qi and Liu, Liyuan and Wu, Nan-Jian and Wang, Zhihua},
+  journal={Solid-State Circuits, IEEE Journal of},
+  volume={49},
+  number={9},
+  pages={2067--2082},
+  year={2014},
+  publisher={IEEE}
+}
+
+@article{stewart2015ripl,
+  title={RIPL: An Efficient Image Processing DSL for FPGAs},
+  author={Stewart, Robert and Bhowmik, Deepayan and Michaelson, Greg and Wallace, Andrew},
+  journal={arXiv preprint arXiv:1508.07136},
+  year={2015}
+}
+
+@INPROCEEDINGS{6629568,
+author={H. Sahlbach and R. Ernst and S. Wonneberger and T. Graf},
+booktitle={Intelligent Vehicles Symposium (IV), 2013 IEEE},
+title={Exploration of FPGA-based dense block matching for motion estimation and stereo vision on a single chip},
+year={2013},
+pages={823-828},
+keywords={cameras;driver information systems;field programmable gate arrays;image matching;motion estimation;stereo image processing;FPGA-based dense block matching;camera-based systems;complex driver assistance function design;complex driver assistance function implementation;depth information extraction;design scalability;energy level;front-view cameras;hardware resource sharing;high-performance image processing;intelligent vehicles;modular concept;motion estimation;motion information extraction;moving objects;postprocessing features;preprocessing features;series vehicles;static objects;stereo vision;vehicle environment;Arrays;Automotive engineering;Cameras;Field programmable gate arrays;Hardware;Parallel processing;Vehicles},
+doi={10.1109/IVS.2013.6629568},
+ISSN={1931-0587},
+month={June},}
+
+
+﻿@Inbook{Mori2016,
+author="Mori, Jones Yudi
+and Kautz, Frederik
+and H{\"u}bner, Michael",
+editor="Bonato, Vanderlei
+and Bouganis, Christos
+and Gorgon, Marek",
+chapter="Efficient Camera Input System and Memory Partition for a Vision Soft-Processor",
+title="Applied Reconfigurable Computing: 12th International Symposium, ARC 2016 Mangaratiba, RJ, Brazil, March 22--24, 2016 Proceedings",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="328--333",
+isbn="978-3-319-30481-6",
+doi="10.1007/978-3-319-30481-6_27"
+}
+
+@INPROCEEDINGS{6927417,
+author={L. Gallo and A. Cilardo and D. Thomas and S. Bayliss and G. A. Constantinides},
+booktitle={Field Programmable Logic and Applications (FPL), 2014 24th International Conference on},
+title={Area implications of memory partitioning for high-level synthesis on FPGAs},
+year={2014},
+pages={1-4},
+keywords={field programmable gate arrays;high level synthesis;memory architecture;FPGA;application-based memory partitioning;commercial HLS tool;high-level synthesis;independent memory banks;lattice-based memory partitioning;memory architecture;steering logic;Field programmable gate arrays;Lattices;Memory management;Parallel processing;Schedules;Switches;Table lookup},
+doi={10.1109/FPL.2014.6927417},
+month={Sept},}
+
+@INPROCEEDINGS{6670343,
+author={R. Chen and N. Park and V. K. Prasanna},
+booktitle={High Performance Extreme Computing Conference (HPEC), 2013 IEEE},
+title={High throughput energy efficient parallel FFT architecture on FPGAs},
+year={2013},
+pages={1-6},
+keywords={energy conservation;fast Fourier transforms;field programmable gate arrays;pipeline processing;power aware computing;Cooley-Tukey algorithm;FPGA;PMA scheme;fast Fourier transform;high throughput energy efficient parallel FFT architecture;memory power consumption reduction;multiple pipeline FFT processors;periodic memory activation scheme;task-level parallelism;time-multiplexing;Computer architecture;Field programmable gate arrays;Parallel processing;Pipelines;Power demand;Program processors;Throughput},
+doi={10.1109/HPEC.2013.6670343},
+month={Sept},}
+
+@inproceedings{Chou:2011:VSV:1950413.1950420,
+ author = {Chou, Christopher H. and Severance, Aaron and Brant, Alex D. and Liu, Zhiduo and Sant, Saurabh and Lemieux, Guy G.F.},
+ title = {VEGAS: Soft Vector Processor with Scratchpad Memory},
+ booktitle = {Proceedings of the 19th ACM/SIGDA International Symposium on Field Programmable Gate Arrays},
+ series = {FPGA '11},
+ year = {2011},
+ isbn = {978-1-4503-0554-9},
+ location = {Monterey, CA, USA},
+ pages = {15--24},
+ numpages = {10},
+ doi = {10.1145/1950413.1950420},
+ acmid = {1950420},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {fpga, scratchpad memory, simd, soft processors, vector},
+} 
+
+
+@INPROCEEDINGS{6645538,
+author={M. Naylor and P. J. Fox and A. T. Markettos and S. W. Moore},
+booktitle={Field Programmable Logic and Applications (FPL), 2013 23rd International Conference on},
+title={Managing the FPGA memory wall: Custom computing or vector processing?},
+year={2013},
+pages={1-6},
+keywords={data structures;field programmable gate arrays;microprocessor chips;FPGA memory wall;custom computing;data structures;data-sets;execution pipeline;external memory;full-custom architecture;full-custom memory controller;massively parallel FPGA applications;multicore vector processing;nontrivial neural computation;soft vector processor;vector machines;vector processing version;Bandwidth;Field programmable gate arrays;Neurons;Pipelines;Random access memory;Registers;Vectors},
+doi={10.1109/FPL.2013.6645538},
+month={Sept},}
+
+@INPROCEEDINGS{6718372,
+author={M. J. Klaiber and D. G. Bailey and S. Ahmed and Y. Baroud and S. Simon},
+booktitle={Field-Programmable Technology (FPT), 2013 International Conference on},
+title={A high-throughput FPGA architecture for parallel connected components analysis based on label reuse},
+year={2013},
+pages={302-305},
+keywords={embedded systems;field programmable gate arrays;image segmentation;CCA;embedded image processing systems;field programmable gate arrays;high-throughput FPGA architecture;image partitioning;label reuse;memory efficient architecture;parallel connected components analysis;single-pass connected components analysis;Algorithm design and analysis;Corporate acquisitions;Field programmable gate arrays;Hardware;Image segmentation;Memory management;Throughput},
+doi={10.1109/FPT.2013.6718372},
+month={Dec},}
+
+﻿@Article{Schatz2011,
+author="Schatz, Volker",
+title="Low-latency histogram equalization for infrared image sequences: a hardware implementation",
+journal="Journal of Real-Time Image Processing",
+year="2011",
+volume="8",
+number="2",
+pages="193--206",
+abstract="This work describes a hardware implementation of the contrast-limited adaptive histogram equalization algorithm (CLAHE). The intended application is the processing of image sequences from high-dynamic-range infrared cameras. The variant of histogram equalization implemented is the one most commonly used today. It involves dividing the image into tiles, computing a transformation function on each of them, and interpolating between them. The contrast-limiting is modified to facilitate the hardware implementation, and it is shown that the error introduced by this modification is negligible. The latency of the design is minimized by performing its successive steps simultaneously on the same frame and by exploiting the vertical blank pause between frames. The resource usage of the histogram equalization module and how it depends on its parameters has been determined by synthesis. The design has been synthesized and tested on a Xilinx FPGA. The implementation supports substituting other dynamic range reduction modules for the histogram equalization component by partial dynamic reconfiguration.",
+issn="1861-8219",
+doi="10.1007/s11554-011-0204-y"
+}
+
+@INPROCEEDINGS{6861605,
+author={H. J. Yang and K. Fleming and M. Adler and J. Emer},
+booktitle={Field-Programmable Custom Computing Machines (FCCM), 2014 IEEE 22nd Annual International Symposium on},
+title={LEAP Shared Memories: Automating the Construction of FPGA Coherent Memories},
+year={2014},
+pages={117-124},
+keywords={cache storage;field programmable gate arrays;parallel algorithms;parallel programming;shared memory systems;FPGA coherent memories;FPGA-based parallel algorithms;LEAP shared memories;coherent caches;declarative primitives;general-purpose processors;native FPGA communication capabilities;parallel programming;shared memory resources;shared-memory service;synchronization;synchronization libraries;through-memory primitives;Coherence;Field programmable gate arrays;Parallel programming;Program processors;Protocols;Synchronization;System recovery;FPGA shared memory;coherency;synchronization},
+doi={10.1109/FCCM.2014.43},
+month={May},}
+
+
+
+@INPROCEEDINGS{6703837,
+author={E. Bezati and M. Mattavelli and J. W. Janneck},
+booktitle={Image and Signal Processing and Analysis (ISPA), 2013 8th International Symposium on},
+title={High-level synthesis of dataflow programs for signal processing systems},
+year={2013},
+pages={750-754},
+keywords={data flow computing;video coding;MPEG reference code;RTL-level hardware description;RVC-CAL language;Xronos;automatic synthesis;design-space exploration;functioning hardware;high-level dataflow programs;high-level synthesis;processing architecture;signal processing systems;Computer architecture;Decoding;Hardware;Registers;Signal processing;Software;Transform coding;Dataflow programming;high level HW synthesis},
+doi={10.1109/ISPA.2013.6703837},
+month={Sept},}
+
+@INPROCEEDINGS{6927424,
+author={M. Schmid and N. Apelt and F. Hannig and J. Teich},
+booktitle={Field Programmable Logic and Applications (FPL), 2014 24th International Conference on},
+title={An image processing library for C-based high-level synthesis},
+year={2014},
+pages={1-4},
+keywords={C language;field programmable gate arrays;high level synthesis;image processing;memory architecture;C-based high-level synthesis;hand coded implementation;image processing accelerators;image processing applications;image processing library;local image processing operators;memory architecture;stringent timing constraints;Convolution;Field programmable gate arrays;Hardware;Image processing;Kernel;Libraries;Streaming media},
+doi={10.1109/FPL.2014.6927424},
+month={Sept},}
+
+
+@INPROCEEDINGS{6657039,
+author={Y. T. Chen and J. Cong and M. A. Ghodrat and M. Huang and C. Liu and B. Xiao and Y. Zou},
+booktitle={Computer Design (ICCD), 2013 IEEE 31st International Conference on},
+title={Accelerator-rich CMPs: From concept to real hardware},
+year={2013},
+pages={169-176},
+keywords={cache storage;computer architecture;logic circuits;logic design;multiprocessing systems;multiprocessor interconnection networks;virtualisation;C-based synthesis flow;IP template;PARC design;Virtex-6 FPGA chip;accelerator manager;accelerator memory;accelerator resource virtualization;accelerator-rich CMP;accelerator-rich architecture;application-specific accelerator;cache overhead;data transfer;dedicated interconnect design;general-purpose processors;memory sharing;platform-specific peripherals;power efficiency;system IP;system overhead;technical challenges;unmodified Linux booting;userspace memory;Acceleration;Data transfer;Field programmable gate arrays;Hardware;Program processors;Resource management;System-on-chip;FPGA;computer architecture;customizable computing;design automation;prototyping},
+doi={10.1109/ICCD.2013.6657039},
+month={Oct},}
+
+@inproceedings{lucarz2008dataflow,
+  title={Dataflow/actor-oriented language for the design of complex signal processing systems},
+  author={Lucarz, Christophe and Mattavelli, Marco and Wipliez, Matthieu and Roquier, Ghislain and Raulet, Micka{\"e}l and Janneck, J{\"o}rn W and Miller, Ian D and Parlour, David B},
+  booktitle={Conference on Design and Architectures for Signal and Image Processing (DASIP 2008)},
+  pages={1--8},
+  year={2008}
+}
+
+
+@article{bhaskaranspectracamtm,
+  title={SPECTRACAMTM--Random Access Charge Injection Device Cameras for Spectroscopy},
+  author={Bhaskaran, Suraj and Ziegler, Herb and Borman, Claudia and Swab, John and Beam, Carey and Chapman, Tony and Capogreco, John and VanGorden, Steve and Greco, Mark and Pace, Matt and others}
+}
+
+@inproceedings{takhar2006new,
+  title={A new compressive imaging camera architecture using optical-domain compression},
+  author={Takhar, Dharmpal and Laska, Jason N and Wakin, Michael B and Duarte, Marco F and Baron, Dror and Sarvotham, Shriram and Kelly, Kevin F and Baraniuk, Richard G},
+  booktitle={Electronic Imaging 2006},
+  pages={606509--606509},
+  year={2006},
+  organization={International Society for Optics and Photonics}
+}
+
+@inproceedings{seinstra2001lazy,
+  title={The Lazy Programmer's Approach to Building a Parallel Image processing Library.},
+  author={Seinstra, Frank J and Koelma, Dennis and others}
+}
+
+@article{Rheinlander:2017:OCD:3101309.3078752,
+ author = {Rheinl\"{a}nder, Astrid and Leser, Ulf and Graefe, Goetz},
+ title = {Optimization of Complex Dataflows with User-Defined Functions},
+ journal = {ACM Comput. Surv.},
+ issue_date = {May 2017},
+ volume = {50},
+ number = {3},
+ month = may,
+ year = {2017},
+ issn = {0360-0300},
+ pages = {38:1--38:39},
+ articleno = {38},
+ numpages = {39},
+ url = {http://doi.acm.org/10.1145/3078752},
+ doi = {10.1145/3078752},
+ acmid = {3078752},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Dataflow optimization, big data processing systems, user-defined functions},
+} 
+@INPROCEEDINGS{LeePar95,
+    author = {Edward A. Lee and Thomas Parks},
+    title = {{Dataflow Process Networks}},
+    booktitle = {Proceedings of the IEEE},
+    year = {1995},
+    pages = {773--799}
+}
+
+@inproceedings{JanMilPar08,
+  title={Synthesizing hardware from dataflow programs: An {MPEG-4} simple profile decoder case study},
+  author={Janneck, J{\"o}rn W and Miller, Ian D and Parlour, David B and Roquier, Ghislain and Wipliez, Matthieu and Raulet, Micka{\"e}l},
+  booktitle={Signal Processing Systems, 2008. SiPS 2008. IEEE Workshop on},
+  pages={287--292},
+  year={2008},
+  organization={IEEE}
+}
+
+@inproceedings{winterstein2013high,
+  title={High-level synthesis of dynamic data structures: A case study using Vivado HLS},
+  author={Winterstein, Felix and Bayliss, Samuel and Constantinides, George A},
+  booktitle={Field-Programmable Technology (FPT), 2013 International Conference on},
+  pages={362--365},
+  year={2013},
+  organization={IEEE}
+}
+
+@article{kung2015impact,
+  title={On the Impact of Energy-Accuracy Tradeoff in a Digital Cellular Neural Network for Image Processing},
+  author={Kung, Jaeha and Kim, Duckhwan and Mukhopadhyay, Saibal},
+  journal={Computer-Aided Design of Integrated Circuits and Systems, IEEE Transactions on},
+  volume={34},
+  number={7},
+  pages={1070--1081},
+  year={2015},
+  publisher={IEEE}
+}
+
+
+@inproceedings{Cilardo:2015:ILU:2755753.2755789,
+ author = {Cilardo, Alessandro and Gallo, Luca},
+ title = {Interplay of Loop Unrolling and Multidimensional Memory Partitioning in HLS},
+ booktitle = {Proceedings of the 2015 Design, Automation \& Test in Europe Conference \& Exhibition},
+ series = {DATE '15},
+ year = {2015},
+ isbn = {978-3-9815370-4-8},
+ location = {Grenoble, France},
+ pages = {163--168},
+ numpages = {6},
+ acmid = {2755789},
+ publisher = {EDA Consortium},
+ address = {San Jose, CA, USA},
+} 
+
+@book{bailey2011design,
+  title={Design for embedded image processing on FPGAs},
+  author={Bailey, Donald G},
+  year={2011},
+  publisher={John Wiley \& Sons}
+}
+
+@article{wipliez2011software,
+  title={Software code generation for the RVC-CAL language},
+  author={Wipliez, Matthieu and Roquier, Ghislain and Nezan, Jean-Fran{\c{c}}ois},
+  journal={Journal of Signal Processing Systems},
+  volume={63},
+  number={2},
+  pages={203--213},
+  year={2011},
+  publisher={Springer}
+}
+
+@incollection{serot2013caph,
+  title={Caph: A language for implementing stream-processing applications on fpgas},
+  author={S{\'e}rot, Jocelyn and Berry, Fran{\c{c}}ois and Ahmed, Sameer},
+  booktitle={Embedded Systems Design with FPGAs},
+  pages={201--224},
+  year={2013},
+  publisher={Springer}
+}
+
+@article{Cong:2011:AMP:1929943.1929947,
+ author = {Cong, Jason and Jiang, Wei and Liu, Bin and Zou, Yi},
+ title = {Automatic Memory Partitioning and Scheduling for Throughput and Power Optimization},
+ journal = {ACM Trans. Des. Autom. Electron. Syst.},
+ issue_date = {March 2011},
+ volume = {16},
+ number = {2},
+ month = apr,
+ year = {2011},
+ issn = {1084-4309},
+ pages = {15:1--15:25},
+ articleno = {15},
+ numpages = {25},
+ doi = {10.1145/1929943.1929947},
+ acmid = {1929947},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Behavioral synthesis, memory partition},
+} 
+
+@article{Kadric:2016:IPM:2984740.2857057,
+ author = {Kadric, Edin and Lakata, David and Dehon, Andr{\'e}},
+ title = {Impact of Parallelism and Memory Architecture on FPGA Communication Energy},
+ journal = {ACM Trans. Reconfigurable Technol. Syst.},
+ issue_date = {September 2016},
+ volume = {9},
+ number = {4},
+ month = aug,
+ year = {2016},
+ issn = {1936-7406},
+ pages = {30:1--30:23},
+ articleno = {30},
+ numpages = {23},
+ doi = {10.1145/2857057},
+ acmid = {2857057},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {FPGA, architecture, banking, communication, energy, memory, power},
+} 
+
+@inproceedings{Kadric:2015:IMA:2684746.2689062,
+ author = {Kadric, Edin and Lakata, David and DeHon, Andr{\'e}},
+ title = {Impact of Memory Architecture on FPGA Energy Consumption},
+ booktitle = {Proceedings of the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+ series = {FPGA '15},
+ year = {2015},
+ isbn = {978-1-4503-3315-3},
+ location = {Monterey, California, USA},
+ pages = {146--155},
+ numpages = {10},
+ doi = {10.1145/2684746.2689062},
+ acmid = {2689062},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {architecture, banking, energy, fpga, memory, power},
+} 
+
+@ARTICLE{4068934,
+author={R. Tessier and V. Betz and D. Neto and A. Egier and T. Gopalsamy},
+journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+title={Power-Efficient RAM Mapping Algorithms for FPGA Embedded Memory Blocks},
+year={2007},
+volume={26},
+number={2},
+pages={278-290},
+keywords={embedded systems;field programmable gate arrays;logic CAD;logic simulation;memory architecture;FPGA compiler;FPGA embedded memory blocks;computer-aided design algorithms;design automation;dynamic power minimization;field-programmable gate array;high-level memory functions;logical memories;power dissipation;power reductions;power-efficient RAM mapping;user-defined memory specifications;Field programmable gate arrays;Hardware;Heuristic algorithms;Logic;Power dissipation;Power measurement;Random access memory;Read-write memory;Size control;Testing;Design automation;field-programmable gate arrays (FPGAs);memory architecture;power demand},
+doi={10.1109/TCAD.2006.887924},
+ISSN={0278-0070},
+month={Feb},}
+
+@inproceedings{Tessier:2006:PRM:1117201.1117229,
+ author = {Tessier, Russell and Betz, Vaughn and Neto, David and Gopalsamy, Thiagaraja},
+ title = {Power-aware RAM Mapping for FPGA Embedded Memory Blocks},
+ booktitle = {Proceedings of the 2006 ACM/SIGDA 14th International Symposium on Field Programmable Gate Arrays},
+ series = {FPGA '06},
+ year = {2006},
+ isbn = {1-59593-292-5},
+ location = {Monterey, California, USA},
+ pages = {189--198},
+ numpages = {10},
+ doi = {10.1145/1117201.1117229},
+ acmid = {1117229},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {FPGA, dynamic power, embedded memory block},
+} 
+
+@article{rivoallon2010reducing,
+  title={Reducing switching power with intelligent clock gating},
+  author={Rivoallon, Frederic},
+journal = {Xilinx White Paper},
+  year={2010}
+}
+
+@article{ning2012robust,
+  title={Robust mean-shift tracking with corrected background-weighted histogram},
+  author={Ning, Jifeng and Zhang, Lei and Zhang, David and Wu, Chengke},
+  journal={IET Computer Vision},
+  volume={6},
+  number={1},
+  pages={62--69},
+  year={2012},
+  publisher={IET}
+}
+
+@article{Atkinson2013106,
+title = "Downscaling in remote sensing ",
+journal = "International Journal of Applied Earth Observation and Geoinformation ",
+volume = "22",
+number = "",
+pages = "106 - 114",
+year = "2013",
+note = "Spatial Statistics for Mapping the Environment ",
+issn = "0303-2434",
+doi = "http://dx.doi.org/10.1016/j.jag.2012.04.012",
+author = "Peter M. Atkinson",
+keywords = "Downscaling",
+keywords = "Super-resolution mapping",
+keywords = "Area-to-point prediction",
+keywords = "Area-to-point kriging "
+}
+
+@ARTICLE{6062672,
+author={S. Jin and D. Kim and T. T. Nguyen and D. Kim and M. Kim and J. W. Jeon},
+journal={IEEE Transactions on Industrial Informatics},
+title={Design and Implementation of a Pipelined Datapath for High-Speed Face Detection Using FPGA},
+year={2012},
+volume={8},
+number={1},
+pages={158-167},
+keywords={face recognition;field programmable gate arrays;image classification;Xilinx Virtex-5 LX330 FPGA;boosted classifiers;cascade merging;classifier sharing;hardware architecture;high-speed face detection;pipelined datapath;real-time face detection;resource utilization;standard VGA;symmetric image downscaling;symmetric image pyramid;tree-structured cascade classifiers;Computer architecture;Face;Face detection;Field programmable gate arrays;Hardware;Real time systems;Streaming media;Computer vision;face detection;field-programmable gate arrays (FPGAs);integrated circuit design},
+doi={10.1109/TII.2011.2173943},
+ISSN={1551-3203},
+month={Feb},}
+
+
+@inproceedings{Rob,
+ author = {Stewart, R. and Michaelson, G. and Bhowmik, D. and Garcia, P. and Wallace, A.},
+ title = {A Dataflow IR for Memory Efficient RIPL Compilation to FPGAs},
+ booktitle = {Proceedings of the International Workshop on Data Locality in Modern Computing Systems},
+ year = {2016},
+ location = {Granada, Spain},
+ publisher = {Springer},
+} 
+
+@article{Hegarty:2014:DCH:2601097.2601174,
+ author = {Hegarty, James and Brunhaver, John and DeVito, Zachary and Ragan-Kelley, Jonathan and Cohen, Noy and Bell, Steven and Vasilyev, Artem and Horowitz, Mark and Hanrahan, Pat},
+ title = {Darkroom: Compiling High-level Image Processing Code into Hardware Pipelines},
+ journal = {ACM Trans. Graph.},
+ issue_date = {July 2014},
+ volume = {33},
+ number = {4},
+ month = jul,
+ year = {2014},
+ issn = {0730-0301},
+ pages = {144:1--144:11},
+ articleno = {144},
+ numpages = {11},
+ doi = {10.1145/2601097.2601174},
+ acmid = {2601174},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {FPGAs, domain-specific languages, hardware synthesis, image processing, video processing},
+} 
+
+@inproceedings{appuswamy2015scaling,
+  title={Scaling the Memory Power Wall With DRAM-Aware Data Management},
+  author={Appuswamy, Raja and Olma, Matthaios and Ailamaki, Anastasia},
+  booktitle={Proceedings of the 11th International Workshop on Data Management on New Hardware},
+  pages={3},
+  year={2015},
+  organization={ACM}
+}
+
+@article{ipol.2013.26,
+    title   = {{TV-L1 Optical Flow Estimation}},
+    author  = {Sánchez Pérez, Javier and Meinhardt-Llopis, Enric and Facciolo, Gabriele},
+    journal = {{Image Processing On Line}},
+    volume  = {3},
+    pages   = {137--150},
+    year    = {2013},
+    doi     = {10.5201/ipol.2013.26},
+}
+
+@ARTICLE{4703230,
+author={H. Jiang and H. Ardo and V. Owall},
+journal={IEEE Transactions on Circuits and Systems for Video Technology},
+title={A Hardware Architecture for Real-Time Video Segmentation Utilizing Memory Reduction Techniques},
+year={2009},
+volume={19},
+number={2},
+pages={226-236},
+doi={10.1109/TCSVT.2008.2009244},
+ISSN={1051-8215},
+month={Feb},}
+
+@ARTICLE{6587728,
+author={J. Wang and S. Zhong and L. Yan and Z. Cao},
+journal={IEEE Transactions on Circuits and Systems for Video Technology},
+title={An Embedded System-on-Chip Architecture for Real-time Visual Detection and Matching},
+year={2014},
+volume={24},
+number={3},
+pages={525-538},
+doi={10.1109/TCSVT.2013.2280040},
+ISSN={1051-8215},
+month={March},}
+
+@ARTICLE{5159427,
+author={S. Jin and J. Cho and X. D. Pham and K. M. Lee and S. K. Park and M. Kim and J. W. Jeon},
+journal={IEEE Transactions on Circuits and Systems for Video Technology},
+title={FPGA Design and Implementation of a Real-Time Stereo Vision System},
+year={2010},
+volume={20},
+number={1},
+pages={15-26},
+doi={10.1109/TCSVT.2009.2026831},
+ISSN={1051-8215},
+month={Jan},}
+
+@ARTICLE{6327642,
+author={S. G. Fowers and D. J. Lee and D. A. Ventura and J. K. Archibald},
+journal={IEEE Transactions on Circuits and Systems for Video Technology},
+title={The Nature-Inspired BASIS Feature Descriptor for UAV Imagery and Its Hardware Implementation},
+year={2013},
+volume={23},
+number={5},
+pages={756-768},
+doi={10.1109/TCSVT.2012.2223631},
+ISSN={1051-8215},
+month={May},}
+
+@article{Vassiliadis:2015:PMR:2858788.2688546,
+ author = {Vassiliadis, Vassilis and Parasyris, Konstantinos and Chalios, Charalambos and Antonopoulos, Christos D. and Lalis, Spyros and Bellas, Nikolaos and Vandierendonck, Hans and Nikolopoulos, Dimitrios S.},
+ title = {A Programming Model and Runtime System for Significance-aware Energy-efficient Computing},
+ journal = {SIGPLAN Not.},
+ issue_date = {August 2015},
+ volume = {50},
+ number = {8},
+ month = jan,
+ year = {2015},
+ issn = {0362-1340},
+ pages = {275--276},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/2858788.2688546},
+ doi = {10.1145/2858788.2688546},
+ acmid = {2688546},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Energy saving, approximate computing, programming model, runtime system},
+} 
+
+@article{park2014expax,
+  title={Expax: A framework for automating approximate programming},
+  author={Park, Jongse and Zhang, Xin and Ni, Kangqi and Esmaeilzadeh, Hadi and Naik, Mayur},
+  year={2014},
+  publisher={Georgia Institute of Technology}
+}
+
+@ARTICLE{7106512,
+author={A. Raha and H. Jayakumar and V. Raghunathan},
+journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+title={Input-Based Dynamic Reconfiguration of Approximate Arithmetic Units for Video Encoding},
+year={2016},
+volume={24},
+number={3},
+pages={846-857},
+keywords={adders;arithmetic codes;discrete cosine transforms;motion estimation;video coding;MPEG encoders;approximate arithmetic units;discrete cosine transform modules;input-based dynamic reconfiguration;motion estimation;power consumption;reconfigurable adder/subtractor blocks;reconfigurable approximate architecture;video encoding;Adders;Approximation methods;Computer architecture;Encoding;Hardware;Power demand;Transform coding;Approximate circuits;approximate computing;low power design;quality configurable;quality configurable.},
+doi={10.1109/TVLSI.2015.2424212},
+ISSN={1063-8210},
+month={March},}
+
+@ARTICLE{7412762,
+author={S. Sinha and W. Zhang},
+journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+title={Low-Power FPGA Design Using Memoization-Based Approximate Computing},
+year={2016},
+volume={24},
+number={8},
+pages={2665-2678},
+keywords={energy conservation;field programmable gate arrays;high level synthesis;logic design;low-power electronics;multiplying circuits;reconfigurable architectures;C-to-register-transfer-level synthesis;approximate multipliers;approximate processors;arithmetic blocks;bit-width truncation;dynamic power saving;energy efficiency;field-programmable gate arrays;high-level synthesis;image-processing benchmarks;low-power FPGA design;memoization-based approximate computing;memoization-based microarchitecture generation;power-to-signal noise ratio;Clocks;Computer architecture;Field programmable gate arrays;Image edge detection;Program processors;Support vector machines;Approximate computing;field-programmable gate array (FPGA);high-level synthesis (HLS)},
+doi={10.1109/TVLSI.2016.2520979},
+ISSN={1063-8210},
+month={Aug},}
+
+@ARTICLE{7517349,
+author={E. Nogues and D. Menard and M. Pelcat},
+journal={IEEE Transactions on Emerging Topics in Computing},
+title={Algorithmic-level Approximate Computing Applied to Energy Efficient HEVC Decoding},
+year={2016},
+volume={PP},
+number={99},
+pages={1-1},
+keywords={Approximate computing;Approximation algorithms;Complexity theory;Energy consumption;Quality of service;Signal processing;Signal processing algorithms;Approximate computing;Energy efficiency;HEVC;Video decoding},
+doi={10.1109/TETC.2016.2593644},
+ISSN={2168-6750},
+month={},}
+
+@INPROCEEDINGS{6657024,
+author={W. T. J. Chan and A. B. Kahng and S. Kang and R. Kumar and J. Sartori},
+booktitle={2013 IEEE 31st International Conference on Computer Design (ICCD)},
+title={Statistical analysis and modeling for error composition in approximate computation circuits},
+year={2013},
+pages={47-53},
+keywords={VLSI;digital arithmetic;integrated circuit design;integrated circuit modelling;regression analysis;table lookup;CAD tools;VLSI design;approximate arithmetic designs;approximate arithmetic operations;approximate computation circuits;approximate hardware modules;energy efficiency;error composition flow;error metrics;high performance requirements;interval-based modeling approach;lookup table technique;low power requirements;multiply-accumulator testcase;output quality estimation;output quality evaluation;regression-based technique;sampled error distribution;statistical analysis;statistical properties;Adders;Approximation methods;Estimation;Hardware;Libraries;Measurement;Standards;Approximate computation;error modeling},
+doi={10.1109/ICCD.2013.6657024},
+ISSN={1063-6404},
+month={Oct},}
+
+@INPROCEEDINGS{7479194,
+author={S. Lee and D. Lee and K. Han and E. Shriver and L. K. John and A. Gerstlauer},
+booktitle={2016 17th International Symposium on Quality Electronic Design (ISQED)},
+title={Statistical quality modeling of approximate hardware},
+year={2016},
+pages={163-168},
+keywords={circuit optimisation;digital arithmetic;logic circuits;logic design;quality assurance;statistical analysis;FFT;IDCT benchmarks;approximate hardware statistical quality modeling;arithmetic approximations;bit truncation;custom hardware kernels;datapath optimizations;deterministic error behavior;energy design space;error-tolerant applications;generic quality-energy models;logic approximations;one-time error-free simulation;quality estimation approaches;quality-energy optimization flow;semianalytical quality model;signal processing;switching activity;systematic exploration;voltage scaling;Estimation;Logic gates;Optimization;Quality of service;Signal to noise ratio},
+doi={10.1109/ISQED.2016.7479194},
+ISSN={1948-3295},
+month={March},}
+
+@ARTICLE{7533498,
+author={K. Nepal and S. Hashemi and H. Tann and R. I. Bahar and S. Reda},
+journal={IEEE Transactions on Emerging Topics in Computing},
+title={Automated High-Level Generation of Low-Power Approximate Computing Circuits},
+year={2016},
+volume={PP},
+number={99},
+pages={1-1},
+keywords={Adders;Algorithm design and analysis;Approximation algorithms;Logic gates;Power demand;Signal processing algorithms;Standards;Approximate Computing;Critical Path Optimization;Design Space Exploration;Low Area Circuits;Low Power Circuits;Voltage Scaling},
+doi={10.1109/TETC.2016.2598283},
+ISSN={2168-6750},
+month={},}
+
+@article{sampson2015accept,
+  title={ACCEPT: A programmer-guided compiler framework for practical approximate computing},
+  author={Sampson, Adrian and Baixo, Andr{\'e} and Ransford, Benjamin and Moreau, Thierry and Yip, Joshua and Ceze, Luis and Oskin, Mark}
+}
+
+@ARTICLE{7386818,
+author={A. Yazdanbakhsh and B. Thwaites and H. Esmaeilzadeh and G. Pekhimenko and O. Mutlu and T. C. Mowry},
+journal={IEEE Design Test},
+title={Mitigating the Memory Bottleneck With Approximate Load Value Prediction},
+year={2016},
+volume={33},
+number={1},
+pages={32-42},
+keywords={cache storage;graphics processing units;GPU performance bottlenecks;approximate load value prediction;cache misses fraction;energy efficiency;limited memory bandwidth;long access latency;memory bottleneck mitigation;safe-to-approximate loads;Bandwidth;Degradation;Energy efficiency;Graphics processing units;Memory management;Safety},
+doi={10.1109/MDAT.2015.2504899},
+ISSN={2168-2356},
+month={Feb},}
+
+@article{xu2016guest,
+  title={Guest Editors' Introduction: Approximate Computing},
+  author={Xu, Qiang and Mytkowicz, Todd and Kim, Nam Sung},
+  journal={IEEE Design \& Test},
+  volume={33},
+  number={1},
+  pages={6--7},
+  year={2016},
+  publisher={IEEE}
+}
+
+@article{mittal2016survey,
+  title={A survey of techniques for approximate computing},
+  author={Mittal, Sparsh},
+  journal={ACM Computing Surveys (CSUR)},
+  volume={48},
+  number={4},
+  pages={62},
+  year={2016},
+  publisher={ACM}
+}
+
+@inproceedings{venkataramani2013quality,
+  title={Quality programmable vector processors for approximate computing},
+  author={Venkataramani, Swagath and Chippa, Vinay K and Chakradhar, Srimat T and Roy, Kaushik and Raghunathan, Anand},
+  booktitle={Proceedings of the 46th Annual IEEE/ACM International Symposium on Microarchitecture},
+  pages={1--12},
+  year={2013},
+  organization={ACM}
+}
+
+@inproceedings{misailovic2014chisel,
+  title={Chisel: Reliability-and accuracy-aware optimization of approximate computational kernels},
+  author={Misailovic, Sasa and Carbin, Michael and Achour, Sara and Qi, Zichao and Rinard, Martin C},
+  booktitle={ACM SIGPLAN Notices},
+  volume={49},
+  number={10},
+  pages={309--328},
+  year={2014},
+  organization={ACM}
+}
+
+@inproceedings{roy2014asac,
+  title={Asac: Automatic sensitivity analysis for approximate computing},
+  author={Roy, Pooja and Ray, Rajarshi and Wang, Chundong and Wong, Weng Fai},
+  booktitle={ACM SIGPLAN Notices},
+  volume={49},
+  number={5},
+  pages={95--104},
+  year={2014},
+  organization={ACM}
+}
+
+@inproceedings{venkataramani2015approximate,
+  title={Approximate computing and the quest for computing efficiency},
+  author={Venkataramani, Swagath and Chakradhar, Srimat T and Roy, Kaushik and Raghunathan, Anand},
+  booktitle={Proceedings of the 52nd Annual Design Automation Conference},
+  pages={120},
+  year={2015},
+  organization={ACM}
+}
+
+@ARTICLE{5401086,
+author={Y. H. Park and S. Pasricha and F. J. Kurdahi and N. Dutt},
+journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+title={A Multi-Granularity Power Modeling Methodology for Embedded Processors},
+year={2011},
+volume={19},
+number={4},
+pages={668-681},
+keywords={embedded systems;microprocessor chips;MIPS processor;OpenRISC processor;electronic system level design flow;multigranularity power modeling methodology;multiprocessor embedded system;power dissipation;power optimization technique;Digital systems;embedded processor performance;embedded processor power estimation;multi-granularity levels},
+doi={10.1109/TVLSI.2009.2039153},
+ISSN={1063-8210},
+month={April},}
+
+%-------------------------------------------------------
+%  Bib file related to crowd measurement
+%  Author:
+%       Deepayan Bhowmik <d.bhowmik at hw.ac.uk>
+%       Andrew Wallace <A.M.Wallace at hw.ac.uk>
+%   Date: 04.04.2014
+%-------------------------------------------------------
+%-------------------------------------------------------
+@STRING{ icassp = "Proc. IEEE ICASSP" }
+@STRING{ eccv = "Proc. European Conference on Computer Vision (ECCV)" }
+@STRING{ avss = "Proc. IEEE Int'l Conf. on Advanced Video and Signal-Based Surveillance (AVSS)"}
+@STRING{ iccv = "Proc. IEEE ICCV" }
+@STRING{ icip = "Proc. IEEE ICIP" }
+@STRING{ mmsp = "Proc. IEEE MMSP" }
+@STRING{ icme = "Proc. IEEE ICME" }
+@STRING{ cvpr = "Proc. IEEE CVPR" }
+@STRING{ icpr = "Proc. Int'l Conf. on Pattern Recognition (ICPR)"}
+@string{ itip = "IEEE Trans. on Image Processing"}
+@STRING{ itmm = "IEEE Trans. on Multimedia" }
+@STRING{ ieeemm = "IEEE Multimedia" }
+@STRING{ itsp = "IEEE Trans. on Signal Processing" }
+@STRING{ pami = "IEEE Trans. on Pattern Analysis and Machine Intelligence" }
+@STRING{ csvt = "IEEE Trans. on Circuit and Systems for Video Technology"}
+@STRING{ sp = "Signal Processing"}
+@STRING{ wiley = "John Wiley and Sons"}
+%-------------------------------------------------------
+
+@book{RasWil06,
+  title={Gaussian Processes for Machine Learning},
+  author={C.~E.~Rasmussen and C.~K.~I.~Williams},
+  year={2006},
+  publisher={MIT Press}
+}
+
+
+
+@article{ManVezCal14,
+title = "Detection of static groups and crowds gathered in open spaces by texture classification ",
+journal = "Pattern Recognition Letters ",
+volume = "44",
+number = "",
+pages = "39 - 48",
+year = "2014",
+author = "Marco Manfredi and Roberto Vezzani and Simone Calderara and Rita Cucchiara",
+}
+
+
+
+@inproceedings{Ogn08,
+  title={Crowd detection from still images},
+  author={Arandjelovic, Ognjen},
+  booktitle={BMVC 2008: Proceedings of the British machine vision association conference 2008},
+  pages={1--10},
+  year={2008},
+  organization={BMVA Press}
+}
+
+
+@article{FagCouRac14,
+title = "Unsupervised dense crowd detection by multiscale texture analysis ",
+journal = "Pattern Recognition Letters ",
+volume = "44",
+number = "",
+pages = "126 - 133",
+year = "2014",
+author = "Antoine Fagette and Nicolas Courty and Daniel Racoceanu and Jean-Yves Dufour"
+}
+
+
+
+@inproceedings{WanZhaYan15,
+ author = {Wang, Chuan and Zhang, Hua and Yang, Liang and Liu, Si and Cao, Xiaochun},
+ title = {Deep People Counting in Extremely Dense Crowds},
+ booktitle = {Proc. ACM International Conference on Multimedia},
+ series = {MM '15},
+ year = {2015},
+ isbn = {978-1-4503-3459-4},
+ location = {Brisbane, Australia},
+ pages = {1299--1302}
+} 
+
+
+
+@INPROCEEDINGS{ZhaLiWan15,
+author={Cong Zhang and Hongsheng Li and Xiaogang Wang and Xiaokang Yang},
+booktitle={Computer Vision and Pattern Recognition (CVPR), 2015 IEEE Conference on},
+title={Cross-scene crowd counting via deep convolutional neural networks},
+year={2015},
+pages={833-841},
+month={June}
+}
+
+
+@article{AbrSte72,
+  title={Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables. National Bureau of Standards Applied Mathematics Series 55. Tenth Printing.},
+  author={Abramowitz, Milton and Stegun, Irene A},
+  year={1972},
+  publisher={ERIC}
+}
+
+@article{VarAaz89,
+   author = "Varanasi, Mahesh K. and Aazhang, Behnaam",
+   title = "Parametric generalized Gaussian density estimation",
+   journal = "The Journal of the Acoustical Society of America",
+   year = "1989",
+   volume = "86",
+   number = "4", 
+   pages = "1404-1415",
+   doi = "http://dx.doi.org/10.1121/1.398700" 
+}
+
+
+@article{Sar05,
+author = {Saralees   Nadarajah},
+title = {A generalized normal distribution},
+journal = {Journal of Applied Statistics},
+volume = {32},
+number = {7},
+pages = {685-694},
+year = {2005}
+}
+
+
+
+@ARTICLE{Mal89, 
+author={Mallat, S.G.}, 
+journal={Pattern Analysis and Machine Intelligence, IEEE Transactions on}, 
+title={A theory for multiresolution signal decomposition: the wavelet representation}, 
+year={1989}, 
+volume={11}, 
+number={7}, 
+pages={674-693}, 
+doi={10.1109/34.192463}, 
+ISSN={0162-8828}, 
+month={Jul},}
+
+@ARTICLE{DoVet02, 
+author={Do, M.N. and Vetterli, M.}, 
+journal={Image Processing, IEEE Transactions on}, 
+title={Wavelet-based texture retrieval using generalized Gaussian density and Kullback-Leibler distance}, 
+year={2002}, 
+volume={11}, 
+number={2}, 
+pages={146-158}, 
+doi={10.1109/83.982822}, 
+ISSN={1057-7149}, 
+month={Feb},}
+
+@article{BalMac88,
+     title = {Kurtosis: A Critical Review},
+     author = {Balanda, Kevin P. and MacGillivray, H. L.},
+     journal = {The American Statistician},
+     jstor_issuetitle = {},
+     volume = {42},
+     number = {2},
+     jstor_formatteddate = {May, 1988},
+     pages = {pp. 111-119},    
+     language = {English},
+     year = {1988},
+     publisher = {Taylor & Francis, Ltd. on behalf of the American Statistical Association},
+     copyright = {Copyright © 1988 American Statistical Association},
+    }
+
+@article{FisSwi01,
+  title={Graphical assessment of dependence: Is a picture worth 100 tests?},
+  author={Fisher, NI and Switzer, P},
+  journal={The American Statistician},
+  volume={55},
+  number={3},
+  pages={233--239},
+  year={2001},
+  publisher={Taylor \& Francis}
+}
+
+@article{FisSwi85,
+  title={Chi-plots for assessing dependence},
+  author={Fisher, NI and Switzer, P},
+  journal={Biometrika},
+  volume={72},
+  number={2},
+  pages={253--265},
+  year={1985},
+  publisher={Biometrika Trust}
+}
+
+@book{tauMar12,
+  title={JPEG2000 Image Compression Fundamentals, Standards and Practice: Image Compression Fundamentals, Standards and Practice},
+  author={Taubman, David and Marcellin, Michael},
+  volume={642},
+  year={2012},
+  publisher={Springer Science \& Business Media}
+}
+
+@ARTICLE{CroNowBar98, 
+author={Crouse, M.S. and Nowak, R.D. and Baraniuk, R.G.}, 
+journal={Signal Processing, IEEE Transactions on}, 
+title={Wavelet-based statistical signal processing using hidden Markov models}, 
+year={1998}, 
+volume={46}, 
+number={4}, 
+pages={886-902}, 
+doi={10.1109/78.668544}, 
+ISSN={1053-587X}, 
+month={Apr},}
+
+
+@article{VesAceRue14,
+title = "A statistical model for magnitudes and angles of wavelet frame coefficients and its application to texture retrieval ",
+journal = "Pattern Recognition ",
+volume = "47",
+number = "9",
+pages = "2925 - 2939",
+year = "2014",
+note = "",
+author = "Esther de Ves and Daniel Acevedo and Ana Ruedin and Xaro Benavent",
+}
+
+
+@ARTICLE{ClaHua05, 
+author={Clausi, D.A. and Huang Deng}, 
+journal={Image Processing, IEEE Transactions on}, 
+title={Design-based texture feature fusion using Gabor filters and co-occurrence probabilities}, 
+year={2005}, 
+volume={14}, 
+number={7}, 
+pages={925-936}, 
+ISSN={1057-7149}, 
+month={July},}
+
+
+@ARTICLE{ChoTon10, 
+author={Choy, S.K. and Tong, C.S.}, 
+journal=itip, 
+title={Statistical Wavelet Subband Characterization Based on Generalized Gamma Density and Its Application in Texture Retrieval}, 
+year={2010}, 
+volume={19}, 
+number={2}, 
+pages={281-289}, 
+doi={10.1109/TIP.2009.2033400}, 
+ISSN={1057-7149}, 
+month={Feb},}
+
+@article{KimKan07,
+title = "Texture classification and segmentation using wavelet packet frame and Gaussian mixture model ",
+journal = "Pattern Recognition ",
+volume = "40",
+number = "4",
+pages = "1207 - 1221",
+year = "2007",
+note = "",
+issn = "0031-3203",
+doi = "http://dx.doi.org/10.1016/j.patcog.2006.09.012",
+author = {Soo Chang Kim and Tae Jin Kang},
+}
+
+
+@ARTICLE{WanYon08, 
+author={Zhi-Zhong Wang and Junhai Yong}, 
+journal=itip, 
+title={Texture Analysis and Classification With Linear Regression Model Based on Wavelet Transform}, 
+year={2008}, 
+volume={17}, 
+number={8}, 
+pages={1421-1430}, 
+doi={10.1109/TIP.2008.926150}, 
+ISSN={1057-7149}, 
+month={Aug},}
+
+@book{vettKov95,
+  title={Wavelets and subband coding},
+  author={Vetterli, Martin and Kovacevic, Jelena},
+  number={LCAV-BOOK-1995-001},
+  year={1995},
+  publisher={Prentice-hall}
+}
+
+@ARTICLE{KwiUhl10, 
+author={Kwitt, R. and Uhl, A.}, 
+journal=itip, 
+title={Lightweight Probabilistic Texture Retrieval}, 
+year={2010}, 
+volume={19}, 
+number={1}, 
+pages={241-253}, 
+doi={10.1109/TIP.2009.2032313}, 
+ISSN={1057-7149}, 
+month={Jan},}
+
+@ARTICLE{All12, 
+author={Allili, M.S.}, 
+journal=itip, 
+title={Wavelet Modeling Using Finite Mixtures of Generalized Gaussian Distributions: Application to Texture Discrimination and Retrieval}, 
+year={2012}, 
+volume={21}, 
+number={4}, 
+pages={1452-1464}, 
+doi={10.1109/TIP.2011.2170701}, 
+ISSN={1057-7149}, 
+month={April},}
+
+@ARTICLE{VanScheVan99, 
+author={Van de Wouwer, G. and Scheunders, P. and Van Dyck, D.}, 
+journal=itip, 
+title={Statistical texture characterization from discrete wavelet representations}, 
+year={1999}, 
+volume={8}, 
+number={4}, 
+pages={592-598},
+doi={10.1109/83.753747}, 
+ISSN={1057-7149}, 
+month={Apr},}
+
+@INPROCEEDINGS{IdrSalSei13, 
+author={Idrees, H. and Saleemi, I. and Seibert, C. and Shah, M.}, 
+booktitle=cvpr, 
+title={Multi-source Multi-scale Counting in Extremely Dense Crowd Images}, 
+year={2013}, 
+pages={2547-2554}, 
+doi={10.1109/CVPR.2013.329}, 
+ISSN={1063-6919}, 
+month={June},}
+
+@inproceedings{CheLoyGonXia12,
+        title={Feature Mining for Localised Crowd Counting},
+        author={Ke Chen and Chen Change Loy and Shaogang Gong and Tony Xiang},
+	year={2012},
+	pages={21.1--21.11},
+	booktitle={Proc. British Machine Vision Conference (BMVC)},
+	publisher={BMVA Press},
+	editors={Bowden, Richard and Collomosse, John and Mikolajczyk, Krystian}
+}
+
+@ARTICLE{Ots79,
+author = { Otsu, N.},
+journal={IEEE Trans. on Systems, Man and Cybernetics},
+title={A Threshold Selection Method from Gray-Level Histograms},
+year={1979},
+month={Jan},
+volume={9},
+number={1},
+pages={62-66}
+}
+
+@article{LiFanHuo10,
+year={2010},
+journal={Science China Information Sciences},
+volume={53},
+number={4},
+title={A saliency model based on wavelet transform and visual attention},
+publisher={Springer},
+author={Li, ZhiQiang and Fang, Tao and Huo, Hong},
+pages={738-751}
+}
+
+
+@ARTICLE{ImaLinFan13,
+author={Imamoglu, N. and Weisi Lin and Yuming Fang},
+journal=ieeemm,
+title={A Saliency Detection Model Using Low-Level Features Based on Wavelet Transform},
+year={2013},
+month={Jan},
+volume={15},
+number={1},
+pages={96-105}
+}
+
+@ARTICLE{MahVas13,
+author={Mahadevan, V. and Vasconcelos, N.},
+journal=pami,
+title={Biologically Inspired Object Tracking Using Center-Surround Saliency Mechanisms},
+year={2013},
+month={March},
+volume={35},
+number={3},
+pages={541-554}
+}
+
+@INPROCEEDINGS{ManRicLerGos11,
+author={Mancas, M. and Riche, N. and Leroy, J. and Gosselin, B.},
+booktitle=icip,
+title={Abnormal motion selection in crowds using bottom-up saliency},
+year={2011},
+month={Sept},
+pages={229-232}
+}
+
+@INPROCEEDINGS{WanCheXu10,
+author={Qing Wang and Feng Chen and Wenli Xu},
+booktitle=icip,
+title={Saliency selection for robust visual tracking},
+year={2010},
+month={Sept},
+pages={2785-2788}
+}
+
+@incollection{RicManCulCrnGosDut13,
+year={2013},
+booktitle={Computer Vision (ACCV)},
+volume={7726},
+series={Lecture Notes in Computer Science},
+title={Dynamic Saliency Models and Human Attention: A Comparative Study on Videos},
+publisher={Springer Berlin Heidelberg},
+author={Riche, Nicolas and Mancas, Matei and Culibrk, Dubravko and Crnojevic, Vladimir and Gosselin, Bernard and Dutoit, Thierry},
+pages={586-598}
+}
+
+@ARTICLE{OlvBacMei03,
+  author =       {Olveczky, B.P., Baccus, S.A., Meister, M.},
+  title =        {Segregation of object and background motion in the retina},
+  journal =      {Nature},
+  year =         {2003},
+  pages =        {401-408},
+}
+
+
+
+@ARTICLE{BorItt13,
+author={Borji, A. and Itti, L.},
+journal=pami,
+title={State-of-the-Art in Visual Attention Modeling},
+year={2013},
+month={Jan},
+volume={35},
+number={1},
+pages={185-207}
+}
+
+@article{PETS09,
+ title = {Performance Evaluation of Tracking and Surveillance ({PETS} 2009) data set},
+ url = {http://www.cvg.rdg.ac.uk/PETS2009/},
+ year = {2009}
+}
+
+@conference {AlbSilAlbMos09,
+	title = {Video analysis using corner motion statistics},
+	booktitle = {Proc. IEEE International Workshop on Performance Evaluation of Tracking and Surveillance},
+	series = {PETS-09},
+	year = {2009},
+	month = {June},
+    pages = {31-38},
+	author = {A. Albiol and M. J. Silla and A. Albiol and J.M. Mossi}
+}
+
+@conference {ChaMorVas09,
+	title = {Analysis of crowded scenes using holistic properties},
+	booktitle = {Proc. IEEE International Workshop on Performance Evaluation of Tracking and Surveillance},
+	series = {PETS-09},
+	year = {2009},
+	month = {June},
+    pages = {101-108},
+	author = {Chan, Antoni and Morrow, M and Nuno Vasconcelos}
+}
+
+@INPROCEEDINGS{LiHuaCha11,
+author={Jingwen Li and Lei Huang and Changping Liu},
+booktitle=avss,
+title={Robust people counting in video surveillance: Dataset and system},
+year={2011},
+month={Aug},
+pages={54-59}
+}
+
+@ARTICLE{ChaHad86,
+  author =       {Chatterjee, S., and A. S. Hadi},
+  title =        {Influential Observations, High Leverage Points, and Outliers in Linear Regression},
+  journal =      {Statistical Science},
+  year =         {1986},
+  volume =       {1},
+  pages =        {379-416},
+}
+
+@INPROCEEDINGS{MaHuaLiu10,
+author={Wenhua Ma and Lei Huang and Changping Liu},
+booktitle={Proc. Int'l Conf. on Computer Sciences and Convergence Information Technology (ICCIT)},
+title={Crowd density analysis using co-occurrence texture features},
+year={2010},
+month={Nov},
+pages={170-175}
+}
+
+@ARTICLE{HarShaDin73,
+author={Haralick, R.M. and Shanmugam, K. and Dinstein, Its'Hak},
+journal={IEEE Trans. on Systems, Man and Cybernetics},
+title={Textural Features for Image Classification},
+year={1973},
+month={Nov},
+volume={SMC-3},
+number={6},
+pages={610-621}
+}
+
+@ARTICLE{StaGri00,
+author={Stauffer, Chris and Grimson, W.E.L.},
+journal=pami,
+title={Learning patterns of activity using real-time tracking},
+year={2000},
+month={Aug},
+volume={22},
+number={8},
+pages={747-757}
+}
+
+@INPROCEEDINGS{BenIhaYahUrrDje10,
+author={Benabbas, Yassine and Ihaddadene, N. and Yahiaoui, T. and Urruty, T. and Djeraba, C.},
+booktitle=avss,
+title={Spatio-Temporal Optical Flow Analysis for People Counting},
+year={2010},
+month={Aug},
+pages={212-217}
+}
+
+@ARTICLE{DavJiaVel95,
+author={Davies, A.C. and Jia Hong Yin and Velastin, S.A.},
+journal={Electronics Communication Engineering Journal},
+title={Crowd monitoring using image processing},
+year={1995},
+month={Feb},
+volume={7},
+number={1},
+pages={37-47}
+}
+
+
+@INPROCEEDINGS{RabBel06,
+author={Rabaud, V. and Belongie, S.},
+booktitle=cvpr,
+title={Counting Crowded Moving Objects},
+year={2006},
+month={June},
+volume={1},
+pages={705-711}
+}
+
+@INPROCEEDINGS{ConFogPerTufVen10,
+author={Conte, D. and Foggia, P. and Percannella, G. and Tufano, F. and Vento, M.},
+booktitle=icpr,
+title={Counting Moving People in Videos by Salient Points Detection},
+year={2010},
+month={Aug},
+pages={1743-1746}
+}
+
+@INPROCEEDINGS{SubDesCar12,
+author={Subburaman, V.B. and Descamps, A. and Carincotte, C.},
+booktitle=avss,
+title={Counting People in the Crowd Using a Generic Head Detector},
+year={2012},
+month={Sept},
+pages={470-475}
+}
+
+@INPROCEEDINGS{MinZhaHuaTan08,
+author={Min Li and Zhaoxiang Zhang and Kaiqi Huang and Tieniu Tan},
+booktitle=icpr,
+title={Estimating the number of people in crowded scenes by MID based foreground segmentation and head-shoulder detection},
+year={2008},
+month={Dec},
+pages={1-4}
+}
+
+
+@article{WuNev07,
+year={2007},
+journal={Springer International Journal of Computer Vision},
+volume={75},
+number={2},
+title={Detection and Tracking of Multiple, Partially Occluded Humans by Bayesian Combination of Edgelet based Part Detectors},
+author={Wu, Bo and Nevatia, Ram},
+pages={247-266}
+}
+
+@INPROCEEDINGS{VioJonSno03,
+author={Viola, P. and Jones, M.J. and Snow, D.},
+booktitle={Computer Vision, 2003. Proceedings. Ninth IEEE International Conference on},
+title={Detecting pedestrians using patterns of motion and appearance},
+year={2003},
+month={Oct},
+volume = {2},
+pages={734-741}
+}
+
+@INPROCEEDINGS{WuNev05,
+author={Bo Wu and Nevatia, R.},
+booktitle=iccv,
+title={Detection of multiple, partially occluded humans in a single image by Bayesian combination of edgelet part detectors},
+year={2005},
+month={Oct},
+volume={1},
+pages={90-97}
+}
+
+@INPROCEEDINGS{SabMor07,
+author={Sabzmeydani, P. and Mori, G.},
+booktitle={Computer Vision and Pattern Recognition, 2007. CVPR '07. IEEE Conference on},
+title={Detecting Pedestrians by Learning Shapelet Features},
+year={2007},
+month={June},
+pages={1-8}
+}
+
+@INPROCEEDINGS{WeiCol09,
+author={Weina Ge and Collins, R.T.},
+booktitle=cvpr,
+title={Marked point processes for crowd counting},
+year={2009},
+month={June},
+pages={2913-2920}
+}
+
+@ARTICLE{TuzPorMee08,
+author={Tuzel, O. and Porikli, F. and Meer, P.},
+journal={Pattern Analysis and Machine Intelligence, IEEE Transactions on},
+title={Pedestrian Detection via Classification on Riemannian Manifolds},
+year={2008},
+month={Oct},
+volume={30},
+number={10},
+pages={1713-1727}
+}
+
+@INPROCEEDINGS{DalTri05,
+author={Dalal, N. and Triggs, B.},
+booktitle=cvpr,
+title={Histograms of oriented gradients for human detection},
+year={2005},
+month={June},
+volume={1},
+pages={886-893},
+}
+
+@incollection{LoyCheGonXia13,
+year={2013},
+booktitle={Modeling, Simulation and Visual Analysis of Crowds},
+volume={11},
+series={The International Series in Video Computing},
+title={Crowd Counting and Profiling: Methodology and Evaluation},
+publisher={Springer},
+author={Loy, ChenChange and Chen, Ke and Gong, Shaogang and Xiang, Tao},
+pages={347-382}
+}
+
+
+@article{LiaZhuWan14,
+title = {Counting crowd flow based on feature points},
+journal = {Neurocomputing},
+volume = {133},
+number = {0},
+pages = {377 - 384},
+year = {2014},
+author = {Ronghua Liang and Yuge Zhu and Haixia Wang}
+}
+
+
+@ARTICLE{ChaVas12,
+ author={Chan, A.B. and Vasconcelos, N.},
+ journal=itip,
+ title={Counting People With Low-Level Features and Bayesian Regression},
+ year={2012},
+ month={April},
+ volume={21},
+ number={4},
+ pages={2160-2177}
+}
+
+@article{OmiGhaShi13,
+year={2013},
+journal={Multimedia Tools and Applications},
+volume={65},
+number={3},
+title={Application of {3D-wavelet} statistics to video analysis},
+author={Omidyeganeh, M. and Ghaemmaghami, S. and Shirmohammadi, S.},
+pages={441-465}
+}
+
+
+
+@ARTICLE{XuXioLiZha02,
+ author={Jizheng Xu and Zixiang Xiong and Shipeng Li and Ya-Qin Zhang},
+ journal=csvt,
+ title={Memory-constrained {3D} wavelet transform for video coding without boundary effects},
+ year={2002},
+ month={Sep},
+ volume={12},
+ number={9},
+ pages={812-818}
+}
+
+
+@ARTICLE{ChoWoo99,
+author={Seung-Jong Choi and Woods, J.W.},
+journal={Image Processing, IEEE Transactions on},
+title={Motion-compensated {3-D} subband coding of video},
+year={1999},
+month={Feb},
+volume={8},
+number={2},
+pages={155-167}
+}
+
+
+@ARTICLE{Mur93,
+ author={Muraki, S.},
+ journal={Computer Graphics and Applications, IEEE},
+ title={Volume data and wavelet transforms},
+ year={1993},
+ month={July},
+ volume={13},
+ number={4},
+ pages={50-56}
+}
+
+
+@ARTICLE{TauZak94,
+author={Taubman, D. and Zakhor, A.},
+journal={Image Processing, IEEE Transactions on},
+title={Multirate 3-D subband coding of video},
+year={1994},
+month={Sep},
+volume={3},
+number={5},
+pages={572-588},
+}
+
+@article{DauSwe98,
+year={1998},
+journal={Journal of Fourier Analysis and Applications},
+volume={4},
+number={3},
+title={Factoring wavelet transforms into lifting steps},
+author={Daubechies, Ingrid and Sweldens, Wim},
+pages={247-269}
+}
+
+
+@ARTICLE{LinCheCha01,
+author={Sheng-Fuu Lin and Jaw-Yeh Chen and Hung-Xin Chao},
+journal={IEEE Trans. on Systems, Man and Cybernetics, Part A: Systems and Humans},
+title={Estimation of number of people in crowded scenes using perspective transformation},
+year={2001},
+month={Nov},
+volume={31},
+number={6},
+pages={645-654}
+}
+
+@INPROCEEDINGS{MaaLar12,
+author={Maalouf, A. and Larabi, M-C},
+booktitle=icassp,
+title={Robust foveal wavelet-based object tracking},
+year={2012},
+month={March},
+pages={1489-1492},
+}
+
+@ARTICLE{ComRamMee03,
+ author={D.~Comaniciu and V.~Ramesh and P.~Meer},
+ journal={Pattern Analysis and Machine Intelligence, IEEE Transactions on},
+ title={Kernel-based object tracking},
+ year={2003},
+ month={May},
+ volume={25},
+ number={5},
+ pages={564-577}
+}
+
+@electronic{LLVM,
+ author = {},
+ title = {The {LLVM} Compiler Infrastructure },
+ url = {http://llvm.org/},
+ urldate = {12.02.2014}
+}
+
+@electronic{CoSy,
+ author = {},
+ title = {{CoSy} compiler development system},
+ url = {http://www.ace.nl/compiler/cosy.html},
+ urldate = {12.02.2014}
+}
+
+@TECHREPORT{EkeJan03,
+  author =       {J.~Eker and J.~W.~Janneck},
+  title =        {Cal language report},
+  institution =  {University of California at Berkeley},
+  year =         {2003},
+  type =         {Technical Report},
+  number =       {UCB/ERL M03/48},
+  month =        {Dec},
+}
+
+
+
+@article{JacRauJun10,
+ author={J.~C.~S.~Jacques-Junior and  S.~Raupp~Musse and C.~R.~Jung},
+ journal={IEEE Signal Processing Magazine},
+ title={Crowd Analysis Using Computer Vision Techniques},
+ year={2010},
+ volume={27},
+ number={5},
+ pages={66-77}
+}
+
+@inbook {Rei01,
+ title = {The Psychology of Crowd Dynamics},
+ author = {Stephen~Reicher},
+ publisher = {Blackwell Publishers Ltd},
+ isbn = {9780470998458},
+ pages = {182-208},
+ booktitle = {Blackwell Handbook of Social Psychology: Group Processes},
+ year = {2001}
+}
+
+
+@article{SolMooSha12,
+ author={Berkan~Solmaz and Brian~E.~Moore and Mubarak~Shah},
+ journal=pami,
+ title={Identifying Behaviors in Crowd Scenes Using Stability Analysis for Dynamical Systems},
+ year={2012},
+ volume={34},
+ number={10},
+ pages={2064-2070}
+}
+
+@article{Ber95,
+ author={Alexander~E.~Berlonghi},
+ title={Understanding and planning for different spectator crowds},
+ journal={Safety Science},
+ volume={18},
+ number={4},
+ pages={239-247},
+ year={1995}
+}
+
+@article{ChaCleRob11,
+ author = {R.~Challenger and C.~W.~Clegg and M.~A.~Robinson},
+ title = {Understanding crowd behaviours},
+ journal = {UK Cabinet office. Crown},
+ url = {https://www.gov.uk/government/publications/understanding-crowd-behaviours-documents},
+ year = {2011}
+}
+
+@INPROCEEDINGS{KraNis09,
+ author={L.~Kratz and K.~Nishino},
+ booktitle={Computer Vision and Pattern Recognition, 2009. CVPR 2009. IEEE Conference on},
+ title={Anomaly detection in extremely crowded scenes using spatio-temporal motion pattern models},
+ year={2009},
+ month={June},
+ pages={1446-1453}
+}
+
+@INPROCEEDINGS{MahLiBhaVas10,
+ author={V.~Mahadevan and Weixin~Li and V.~Bhalodia and N.~Vasconcelos},
+ booktitle=cvpr,
+ title={Anomaly detection in crowded scenes},
+ year={2010},
+ pages={1975-1981}
+}
+
+@INPROCEEDINGS{WuMooSha10,
+ author={Shandong~Wu and Brian~E.~Moore and M.~Shah},
+ booktitle=cvpr,
+ title={Chaotic invariants of Lagrangian particle trajectories for anomaly detection in crowded scenes},
+ year={2010},
+ pages={2054-2060}
+}
+
+@ARTICLE{KraNis12,
+ author={L.~Kratz and K.~Nishino},
+ journal=pami,
+ title={Tracking Pedestrians Using Local Spatio-Temporal Motion Patterns in Extremely Crowded Scenes},
+ year={2012},
+ month={May},
+ volume={34},
+ number={5},
+ pages={987-1002}
+}
+
+@INPROCEEDINGS{PelEssSchVan09,
+ author={S.~Pellegrini and A.~Ess and K.~Schindler and L.~Van-Gool},
+ booktitle=iccv,
+ title={You'll never walk alone: Modeling social behavior for multi-target tracking},
+ year={2009},
+ month={Sept},
+ pages={261-268}
+}
+
+@ARTICLE{ZhaNevWu08,
+ author={Tao~Zhao and R.~Nevatia and Bo~Wu},
+ journal=pami,
+ title={Segmentation and Tracking of Multiple Humans in Crowded Environments},
+ year={2008},
+ month={July},
+ volume={30},
+ number={7},
+ pages={1198-1211}
+}
+
+
+@INPROCEEDINGS{ChaVas09,
+ author={A.~B.~Chan and N.~Vasconcelos},
+ booktitle=iccv,
+ title={Bayesian Poisson regression for crowd counting},
+ year={2009},
+ pages={545-551}
+}
+
+@incollection{TuSebDorKraRitYu08,
+ author={Peter~Tu and Thomas~Sebastian and Gianfranco~Doretto and Nils~Krahnstoever and Jens~Rittscher and Ting~Yu},
+ title={Unified Crowd Segmentation},
+ booktitle=eccv,
+ volume={5305},
+ series={Lecture Notes in Computer Science},
+ year={2008},
+ publisher={Springer Berlin Heidelberg},
+ pages={691-704}
+}
+
+@INPROCEEDINGS{ReiManAviSha04,
+ author={P.~Reisman and O.~Mano and S.~Avidan and A.~Shashua},
+ booktitle={Proc IEEE Intelligent Vehicles Symposium},
+ title={Crowd detection in video sequences},
+ year={2004},
+ pages={66-71}
+}
+
+@article{ZhaMonRemVelXu08,
+ author = {Beibei~Zhan and Dorothy~N.~Monekosso and Paolo~Remagnino and Sergio~a.~Velastin and Li-Qun~Xu},
+ title = {Crowd analysis: a survey},
+ journal = {Machine Vision and Applications},
+ month = {April},
+ number = {5-6},
+ pages = {345-357},
+ volume = {19},
+ year = {2008}
+}
+
+@article{teifel2004asynchronous,
+  title={An asynchronous dataflow FPGA architecture},
+  author={Teifel, John and Manohar, Rajit},
+  journal={IEEE Transactions on Computers},
+  volume={53},
+  number={11},
+  pages={1376--1392},
+  year={2004},
+  publisher={IEEE}
+}
+
+@inproceedings{brunei2013turnus,
+  title={TURNUS: a design exploration framework for dataflow system design},
+  author={Brunei, Simone Casale and Mattavelli, Marco and Janneck, J{\"o}rn W},
+  booktitle={Circuits and Systems (ISCAS), 2013 IEEE International Symposium on},
+  pages={654--654},
+  year={2013},
+  organization={IEEE}
+}
+
+@article{Chambers2015176,
+title = "Impact and utility of smell-driven performance tuning for end-user programmers ",
+journal = "Journal of Visual Languages \& Computing ",
+volume = "28",
+number = "",
+pages = "176 - 194",
+year = "2015",
+note = "",
+issn = "1045-926X",
+doi = "https://doi.org/10.1016/j.jvlc.2015.01.002",
+url = "http://www.sciencedirect.com/science/article/pii/S1045926X15000038",
+author = "Christopher Chambers and Christopher Scaffidi",
+keywords = "End-user programming",
+keywords = "Performance",
+keywords = "Visual language "
+}
+
+@Inbook{Sbirlea2016,
+author="Sb{\^i}rlea, Alina
+and Shirako, Jun
+and Pouchet, Louis-No{\"e}l
+and Sarkar, Vivek",
+editor="Shen, Xipeng
+and Mueller, Frank
+and Tuck, James",
+title="Polyhedral Optimizations for a Data-Flow Graph Language",
+bookTitle="Languages and Compilers for Parallel Computing: 28th International Workshop, LCPC 2015, Raleigh, NC, USA, September 9-11, 2015, Revised Selected Papers",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="57--72",
+isbn="978-3-319-29778-1",
+doi="10.1007/978-3-319-29778-1_4",
+url="http://dx.doi.org/10.1007/978-3-319-29778-1_4"
+}
+
+
+@online{Orcc,
+  author = {Orcc},
+  title = {Open RVC-CAL Applications},
+  url = {https://github.com/orcc/orc-apps},
+  urldate = {2017-06-10}
+}
+
+
+@INPROCEEDINGS{6560729,
+author={A. Alaghi and Cheng Li and J. P. Hayes},
+booktitle={2013 50th ACM/EDAC/IEEE Design Automation Conference (DAC)},
+title={Stochastic circuits for real-time image-processing applications},
+year={2013},
+pages={1-6},
+keywords={feature extraction;image processing;image sensors;network synthesis;stochastic processes;feature extraction;image sensors;image-processing circuits design;real-time image-processing;retinal implants;stochastic circuits;stochastic computing techniques;stochastic designs;vision restoration;Clocks;Image edge detection;Noise;Radiation detectors;Real-time systems;Tin;Emerging Technologies;Image Processing;Real-Time Computing;Stochastic Computing;Vision Chips},
+doi={10.1145/2463209.2488901},
+ISSN={0738-100X},
+month={May},}
+
+@ARTICLE{6523114,
+author={P. Turcza and M. Duplaga},
+journal={IEEE Journal of Biomedical and Health Informatics},
+title={Hardware-Efficient Low-Power Image Processing System for Wireless Capsule Endoscopy},
+year={2013},
+volume={17},
+number={6},
+pages={1046-1056},
+keywords={CMOS image sensors;application specific integrated circuits;biomedical optical imaging;data compression;discrete cosine transforms;endoscopes;field programmable gate arrays;image coding;low-power electronics;medical image processing;radio transmitters;wireless sensor networks;FPGA-based implementation;Huffman tables;adaptive Golomb-Rice algorithm;application-specific-integrated-circuits-based systems;burst errors;custom CMOS image sensor;dedicated image compressor;discrete cosine transform;entropy encoder;field programmable gate arrays chip;forward error correction encoder;hardware-efficient architecture;hardware-efficient low-power image processing system;integer version;next-generation wireless endoscopy;on-the-fly compression;power consumption;prior FEC encoding;radio data transmitter;radio transmitted data;random errors;size 65 nm;wireless capsule endoscopy;Image compression;low-power design;wireless capsule endoscopy (WCE);Algorithms;Capsule Endoscopy;Computers;Image Processing, Computer-Assisted;Models, Theoretical},
+doi={10.1109/JBHI.2013.2266101},
+ISSN={2168-2194},
+month={Nov},}
+
+@INPROCEEDINGS{6986099,
+author={F. Conti and D. Rossi and A. Pullini and I. Loi and L. Benini},
+booktitle={2014 IEEE Workshop on Signal Processing Systems (SiPS)},
+title={Energy-efficient vision on the PULP platform for ultra-low power parallel computing},
+year={2014},
+pages={1-6},
+keywords={computer vision;multiprocessing systems;parallel processing;power aware computing;PULP performance;PULP platform;STMicroelectronics UTB FD-SOI technology;computationally demanding vision kernel;convolutional neural networks;embedded computer vision benchmarks;energy scalability;energy-efficient vision;many-core architectures;parallel processing ultra low power platform;reduced power budget;tightly-coupled OpenRISC ISA cores;ultra low power parallel computing;Benchmark testing;Clocks;Computer architecture;Convolutional codes;Kernel;Parallel processing;System-on-chip},
+doi={10.1109/SiPS.2014.6986099},
+ISSN={2162-3562},
+month={Oct},}
+
+@INPROCEEDINGS{7357959,
+author={A. Castro Angulo and R. Carrasco Alvarez and J. Ortegón Aguilar and J. Vázquez Castillo and O. Palma Marrufo and A. Castillo Atoche},
+booktitle={2015 12th International Conference on Electrical Engineering, Computing Science and Automatic Control (CCE)},
+title={A case study of OpenCL-based parallel programming for low-power remote sensing applications},
+year={2015},
+pages={1-6},
+keywords={application program interfaces;geophysical image processing;graphics processing units;hardware-software codesign;low-power electronics;microprocessor chips;parallel programming;remote sensing;ARM processor;GPU processor;HPEC system;HW/SW codesign scheme;OpenCL API call;OpenCL standard;OpenCL-based parallel programming;complex reconstructive signal processing operation;computational performance;data-parallel function;digital processing algorithm;high-performance embedded computing system;low-power ARM/GPU codesign architecture;low-power remote sensing application;parallel embedded version;special-purpose massively parallel processor;Computer architecture;Graphics processing units;Image reconstruction;Real-time systems;Remote sensing;Signal processing algorithms;HPEC systems;OpenCL;remote sensing},
+doi={10.1109/ICEEE.2015.7357959},
+month={Oct},}
+
+@article{martel2016vision,
+  title={Vision Chips with In-pixel Processors for High-performance Low-power Embedded Vision Systems},
+  author={Martel, Julien NP and Dudek, Piotr},
+  year={2016}
+}
+
+@INPROCEEDINGS{7560258,
+author={M. Malik and F. Farahmand and P. Otto and N. Akhlaghi and T. Mohsenin and S. Sikdar and H. Homayoun},
+booktitle={2016 IEEE Computer Society Annual Symposium on VLSI (ISVLSI)},
+title={Architecture Exploration for Energy-Efficient Embedded Vision Applications: From General Purpose Processor to Domain Specific Accelerator},
+year={2016},
+pages={559-564},
+keywords={computer vision;energy conservation;field programmable gate arrays;graphics processing units;multiprocessing systems;EDP;GPU accelerators;OpenCV applications;OpenCV embedded vision applications;ZYNQ;application behavior;architecture exploration;computer vision algorithms;domain specific accelerator;energy-efficient embedded vision applications;general purpose processor;heterogeneous embedded processing platforms;image size;multicore CPU;on-chip FPGA accelerators;single core CPU;Field programmable gate arrays;Filtering algorithms;Graphics processing units;Hardware;Multicore processing;Computer vision;FPGA;GPU;Multicore CPU;OpenCV},
+doi={10.1109/ISVLSI.2016.112},
+month={July},}
+
+
+@Inbook{Gehrig2015,
+author="Gehrig, Stefan K.
+and Stalder, Reto
+and Schneider, Nicolai",
+editor="Nalpantidis, Lazaros
+and Kr{\"u}ger, Volker
+and Eklundh, Jan-Olof
+and Gasteratos, Antonios",
+title="A Flexible High-Resolution Real-Time Low-Power Stereo Vision Engine",
+bookTitle="Computer Vision Systems: 10th International Conference, ICVS 2015, Copenhagen, Denmark, July 6-9, 2015, Proceedings",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="69--79",
+isbn="978-3-319-20904-3",
+doi="10.1007/978-3-319-20904-3_7",
+url="http://dx.doi.org/10.1007/978-3-319-20904-3_7"
+}
+
+
+@Article{Canale2016,
+author="Canale, M.
+and Casale-Brunet, S.
+and Bezati, E.
+and Mattavelli, M.
+and Janneck, J.",
+title="Dataflow Programs Analysis and Optimization Using Model Predictive Control Techniques",
+journal="Journal of Signal Processing Systems",
+year="2016",
+volume="84",
+number="3",
+pages="371--381",
+abstract="The analysis of the trace graphs generated by dataflow program executions has been shown to be an effective tool for exploring and optimizing the design space of application programs on manycore/multicore platforms. In this work a new approach aiming at finding bounded buffer size configurations for implementations generated by dataflow programs is presented. The introduced method is based on an original transformation procedure which converts the execution trace graph into an event driven linear system made up by a Petri Net. A control theoretic approach based on Model Predictive Control methodologies is then applied to the obtained Petri Net system in order to effectively explore the dataflow program design space and find nearly optimal buffer dimensioning solutions leading to a deadlock free program execution. Two real challenging design case examples, namely a JPEG and a MPEG HEVC decoder, are introduced to show the effectiveness of the introduced approach.",
+issn="1939-8115",
+doi="10.1007/s11265-015-1083-4",
+url="http://dx.doi.org/10.1007/s11265-015-1083-4"
+}
+
+
+@INPROCEEDINGS{7803702,
+author={Y. Kim and S. Jadhav and C. S. Gloster},
+booktitle={2016 International Symposium on Computer Architecture and High Performance Computing Workshops (SBAC-PADW)},
+title={Dataflow to Hardware Synthesis Framework on FPGAs},
+year={2016},
+pages={91-96},
+keywords={field programmable gate arrays;performance evaluation;DSE;FPGA;HW designs;HW refinement steps;dataflow based performance estimation;dataflow based performance synthesis framework;design space exploration;digital signal processing systems;field programmable gate arrays;hardware synthesis framework;hardware-based custom logic implementations;high-level DSP algorithm developers;kernel execution;reconfigurable logic;synthesized HDL design;Algorithm design and analysis;Digital signal processing;Discrete wavelet transforms;Estimation;Field programmable gate arrays;Hardware;Software;Dataflow;Discrete Wavelet Transform;FPGA},
+doi={10.1109/SBAC-PADW.2016.24},
+month={Oct},}
+
+
+@INPROCEEDINGS{6544927,
+author={F. Hueske and M. Peters and A. Krettek and M. Ringwald and K. Tzoumas and V. Markl and J. C. Freytag},
+booktitle={2013 IEEE 29th International Conference on Data Engineering (ICDE)},
+title={Peeking into the optimization of data flow programs with MapReduce-style UDFs},
+year={2013},
+pages={1292-1295},
+keywords={data flow computing;optimisation;relational databases;user interfaces;MapReduce;UDF;data flow programs;data processing systems;data-intensive processing;imperative language;optimization;relational DBMS;user-defined functions;Data mining;Data processing;Data visualization;Optimization;Programming;Query processing;Runtime},
+doi={10.1109/ICDE.2013.6544927},
+ISSN={1063-6382},
+month={April},}
+
+@article{lee1995dataflow,
+  title={Dataflow process networks},
+  author={Lee, Edward A and Parks, Thomas M},
+  journal={Proceedings of the IEEE},
+  volume={83},
+  number={5},
+  pages={773--801},
+  year={1995},
+  publisher={IEEE}
+}
+
+@article{Schulte:2014:PSO:2654822.2541980,
+ author = {Schulte, Eric and Dorn, Jonathan and Harding, Stephen and Forrest, Stephanie and Weimer, Westley},
+ title = {Post-compiler Software Optimization for Reducing Energy},
+ journal = {SIGARCH Comput. Archit. News},
+ issue_date = {March 2014},
+ volume = {42},
+ number = {1},
+ month = feb,
+ year = {2014},
+ issn = {0163-5964},
+ pages = {639--652},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/2654822.2541980},
+ doi = {10.1145/2654822.2541980},
+ acmid = {2541980},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {assembly code, compilation, evolutionary computation, mutational robustness, power modeling, profile-guided optimization, superoptimization},
+} 
+
+@INPROCEEDINGS{6572113,
+author={S. C. Brunet and M. Mattavelli and J. W. Janneck},
+booktitle={2013 IEEE International Symposium on Circuits and Systems (ISCAS2013)},
+title={Buffer optimization based on critical path analysis of a dataflow program design},
+year={2013},
+pages={1384-1387},
+keywords={buffer circuits;computational complexity;critical path analysis;decoding;video coding;video streaming;NP-complete problem;arbitrary streaming application;buffer optimization;buffer size configuration;compile-time-only technique;critical path analysis;data stream;dataflow execution trace post-processing;dataflow program design;design space;embedded systems;heuristic algorithm;memory constraint;real-world MPEG-4 SP decoder;throughput constraint;Algorithm design and analysis;Decoding;Heuristic algorithms;Optimization;Streaming media;Throughput;Transform coding},
+doi={10.1109/ISCAS.2013.6572113},
+ISSN={0271-4302},
+month={May},}
+
+@ARTICLE{6871328,
+author={S. Ghandali and B. Alizadeh and M. Fujita and Z. Navabi},
+journal={IEEE Transactions on Computers},
+title={Automatic High-Level Data-Flow Synthesis and Optimization of Polynomial Datapaths Using Functional Decomposition},
+year={2015},
+volume={64},
+number={6},
+pages={1579-1593},
+keywords={data flow computing;mathematics computing;polynomials;DSP;automatic high-level data-flow optimization;automatic high-level data-flow synthesis;computer graphics;datapath intensive designs;digital signal processing;embedded systems applications;functional decomposition;multivariate polynomial;polynomial computations;polynomial datapaths;polynomial functions;Adders;Algebra;Digital signal processing;Optimization methods;Polynomials;Transforms;High-level synthesis;functional decomposition;modulo optimization;polynomial datapath;vanishing polynomial},
+doi={10.1109/TC.2014.2345395},
+ISSN={0018-9340},
+month={June},}
+
+@inproceedings{pandey2013clock,
+  title={Clock gating based energy efficient ALU design and implementation on FPGA},
+  author={Pandey, Bishwajeet and Yadav, Jyotsana and Pattanaik, M and Rajoria, Nitish},
+  booktitle={Energy Efficient Technologies for Sustainability (ICEETS), 2013 International Conference on},
+  pages={93--97},
+  year={2013},
+  organization={IEEE}
+}
+
+@inproceedings{ge2013effects,
+  title={Effects of dynamic voltage and frequency scaling on a k20 gpu},
+  author={Ge, Rong and Vogt, Ryan and Majumder, Jahangir and Alam, Arif and Burtscher, Martin and Zong, Ziliang},
+  booktitle={Parallel Processing (ICPP), 2013 42nd International Conference on},
+  pages={826--833},
+  year={2013},
+  organization={IEEE}
+}
+
+
+@inproceedings{yviquel2013orcc,
+  title={Orcc: Multimedia development made easy},
+  author={Yviquel, Herv{\'e} and Lorence, Antoine and Jerbi, Khaled and Cocherel, Gildas and Sanchez, Alexandre and Raulet, Micka{\"e}l},
+  booktitle={Proceedings of the 21st ACM international conference on Multimedia},
+  pages={863--866},
+  year={2013},
+  organization={ACM}
+}
+
+
+@INPROCEEDINGS{RuoChe10,
+ author={Li~Ruonan and R.~Chellappa},
+ booktitle=cvpr,
+ title={Group motion segmentation using a Spatio-Temporal Driving Force Model},
+ year={2010},
+ pages={2038-2045}
+}
+
+@article{HelMol95,
+  title = {Social force model for pedestrian dynamics},
+  author = {Dirk~Helbing and P\'eter~Moln\'ar},
+  journal = {Physics Rev. E},
+  volume = {51},
+  issue = {5},
+  pages = {4282-4286},
+  year = {1995},
+  month = {May}
+ }
+
+@inproceedings{SetCho11,
+ author = {Ricky~J.~Sethi and Amit~K.~Roy-Chowdhury},
+ title = {Individuals, groups, and crowds: Modelling complex, multi-object behaviour in phase space},
+ journal = iccv,
+ pages = {1502-1509},
+ year = {2011}
+}
+
+@ARTICLE{WuWon12,
+ author={Si~Wu and Hau~San~Wong},
+ journal={IEEE Transactions on Systems, Man, and Cybernetics, Part B: Cybernetics},
+ title={Crowd Motion Partitioning in a Scattered Motion Field},
+ year={2012},
+ month={Oct.},
+ volume={42},
+ number={5},
+ pages={1443-1454}
+}
+
+@INPROCEEDINGS{MehOyaSha09,
+ author={R.~Mehran and A.~Oyama and M.~Shah},
+ booktitle=cvpr,
+ title={Abnormal crowd behavior detection using social force model},
+ year={2009},
+ pages={935-942}
+}
+
+@INPROCEEDINGS{GruKwaHanEss10,
+ author={M.~Grundmann and V.~Kwatra and Mei~Han and I.~Essa},
+ booktitle=cvpr,
+ title={Efficient hierarchical graph-based video segmentation},
+ year={2010},
+ pages={2141-2148}
+}
+
+@Book{ThaMus07,
+ author={D.~Thalmann and S.~Raupp~Musse},
+ title={Crowd Simulation},
+ publisher={Springer},
+ year={2007},
+ address={London}
+}
+
+@ARTICLE{Fru71,
+  author =       {J.~J.~Fruin},
+  title =        {Designing for pedestrians: A level of service concept},
+  journal =      {Highway Research Record},
+  year =         {1971},
+  number =       {355},
+  pages =        {1-15}
+}
+
+@article{PerMeiFac13,
+    title   = {{TV-L1 Optical Flow Estimation}},
+    author  = {Javier~Sánchez~Pérez and Enric~Meinhardt-Llopis and Gabriele~Facciolo},
+    journal = {{Image Processing On Line}},
+    volume  = {2013},
+    pages   = {137-150},
+    year    = {2013},
+    note    = {\url{http://dx.doi.org/10.5201/ipol.2013.26}}
+}
+
+@INPROCEEDINGS{OakAbh12,
+ author={M.~Oakes and C.~Abhayaratne},
+ booktitle={Proc. International Workshop on Image Analysis for Multimedia Interactive Services (WIAMIS)},
+ title={Visual saliency estimation for video},
+ year={2012},
+ pages={1-4}
+}
+
+@incollection{KaeBow02,
+ author={P.~KaewTraKulPong and R.~Bowden},
+ booktitle={Video-Based Surveillance Systems},
+ title={An Improved Adaptive Background Mixture Model for Real-time Tracking with Shadow Detection},
+ publisher={Springer US},
+ pages={135-144},
+ year={2002}
+}
+
+@INPROCEEDINGS{FulVedSoa09,
+ author={Brian~Fulkerson and A.~Vedaldi and S.~Soatto},
+ booktitle=iccv,
+ title={Class segmentation and object localization with superpixel neighborhoods},
+ year={2009},
+ pages={670-677}
+}
+
+@INPROCEEDINGS{KliBer12,
+  author =       {Lukáš~Klicnar and Vítězslav~Beran},
+  title =        {Robust motion segmentation for on-line application},
+  booktitle =    {Winter School of Computer Graphics WSCG'12},
+  year =         {2012},
+  pages =        {205-212}
+}
+
+@ARTICLE{Ouyang15,
+author={P. Ouyang and S. Yin and Y. Zhang and L. Liu and S. Wei},
+journal={IEEE Transactions on Circuits and Systems II: Express Briefs},
+title={A Fast Integral Image Computing Hardware Architecture With High Power and Area Efficiency},
+year={2015},
+volume={62},
+number={1},
+pages={75-79},
+doi={10.1109/TCSII.2014.2362651},
+ISSN={1549-7747},
+month={Jan},}
+
+@INPROCEEDINGS{Weber15,
+author={O. Weber and E. Josse and J. Mazurier and M. Haond},
+booktitle={2015 International Conference on IC Design Technology (ICICDT)},
+title={Static and dynamic power management in 14nm FDSOI technology},
+year={2015},
+pages={1-4},
+doi={10.1109/ICICDT.2015.7165886},
+ISSN={2381-3555},
+month={June},}
+
+@ARTICLE{KimAustin03,
+author={N. S. Kim and T. Austin and D. Baauw and T. Mudge and K. Flautner and J. S. Hu and M. J. Irwin and M. Kandemir and V. Narayanan},
+journal={Computer},
+title={Leakage current: Moore's law meets static power},
+year={2003},
+volume={36},
+number={12},
+pages={68-75},
+doi={10.1109/MC.2003.1250885},
+ISSN={0018-9162},
+month={Dec},}
+
+@ARTICLE{Benini00,
+author={L. Benini and A. Bogliolo and G. De Micheli},
+journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+title={A survey of design techniques for system-level dynamic power management},
+year={2000},
+volume={8},
+number={3},
+pages={299-316},
+doi={10.1109/92.845896},
+ISSN={1063-8210},
+month={June},}
+
+@INPROCEEDINGS{DalNunez06,
+author={D. Dal and A. Nunez and N. Mansouri},
+booktitle={7th International Symposium on Quality Electronic Design (ISQED'06)},
+title={Power islands: a high-level technique for counteracting leakage in deep sub-micron},
+year={2006},
+pages={6 pp.-170},
+doi={10.1109/ISQED.2006.103},
+ISSN={1948-3287},
+month={March},}
+
+@inproceedings{haghbayan2014dark,
+  title={Dark silicon aware power management for manycore systems under dynamic workloads},
+  author={Haghbayan, Mohammad-Hashem and Rahmani, Amir-Mohammad and Weldezion, Awet Yemane and Liljeberg, Pasi and Plosila, Juha and Jantsch, Axel and Tenhunen, Hannu},
+  booktitle={2014 IEEE 32nd International Conference on Computer Design (ICCD)},
+  pages={509--512},
+  year={2014},
+  organization={IEEE}
+}
+
+@ARTICLE{LeeLeeYoo06,
+author={Kangmin Lee and Se-Joong Lee and Hoi-Jun Yoo},
+journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+title={Low-power network-on-chip for high-performance SoC design},
+year={2006},
+volume={14},
+number={2},
+pages={148-160},
+doi={10.1109/TVLSI.2005.863753},
+ISSN={1063-8210},
+month={Feb},}
+%------------ END ---------------------%

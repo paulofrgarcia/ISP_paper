@@ -1,0 +1,8 @@
+In this section we describe our methodology for establishing an error contribution profile which maps each instruction's approximation impact on accuracy. The traditional method for estimating accuracy comprises running exact and approximated versions, and comparing final results according to some error metric (e.g., peak signal to noise ratio, mean-square error), which must be appropriate for the application \cite{7533498}. This method does not offer any insights about the contribution of each individual approximation, unless each is tested in isolation; a lenghty iterative process. Our method aims to provide detailed, per approximation information in a minimal ammount of time.
+\par 
+
+\begin{enumerate}
+\item The traditional way runs the entire application (in accurate and approximate forms), then compares the final results to calculate the error.
+\item We can run them concurrently, and at each instruction, compare the error, without correction; i.e., we would obtain a running sum of errors for total program, decomposed per instruction. This tells us the state of error each instruction encountered, not a particular instruction contribution.
+\item We can run them concurrently, and at each instruction, compare the error, correcting to the proper value; i.e., we would obtain the running sum of each instruction's error contribution.
+\end{enumerate}
