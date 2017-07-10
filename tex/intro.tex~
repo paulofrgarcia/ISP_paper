@@ -1,5 +1,14 @@
 \section{Introduction}
 
+Power/performance trade offs are well established compromises in the design of all embedded systems. In both hardware and software domains, there is a great deal of formal and empirical knowledge which guides system architects towards optimal design time decisions, and myriad runtime operation modes (i.e., power saving modes) controlled locally or remotely. Approximate computing promises unprecedented power savings by introducing a trade off between power and another dimension: accuracy. For applications resiliant to innacurate computations, or where there isn't a single golden result, approximate computing methods can improve traditional design strategies for power reduction: essential in the dark silicon era.
+\par Despite its promise, approximate computing is still an immature technology: a formal model of the impact of approximations on other design metrics does not yet exist. Hence, most approximate computing applications require two premises to be implemented successfully: (a) adequate test data are available, to correctly model the accuracy impact of approximations; and, (b) approximations are performed iteratively at design time, in order to meet the required power/accuracy goals, and remain static throughoput deployment.
+\par This is a stark contrast to performance/power trade offs, where well established benchmark suites offer near total coverage of application scenarios: in approximate computing, test data that allows adequate modeling of accuracy is often unavailable. In performance/power trade offs, systems can self-tune their operation based on load and run time parameters to dynamically adjust metrics. In approximate computing, approximations are static: mainly because there is no trusted method to determine if accuracy suffices, without access to ground truth. In this paper, we tackle this problem:  adjusting the level of approximations at run time, for signal processing applications. Our hypothesis states that prior knowledge about processed data can guide built-in approximation engines, dynamically modifying the level of approximations whilst ensuring that accuracy suffices for the required task.
+\par Specifically, this paper offers the following contributions:
+
+\begin{itemize}
+\item	We introduce the concept of prior knowledge-guided approximations. This represents a statistical measure of approximation impact, unlike test data-based empirical measures prevalent in the state of the art.
+\item	
+\end{itemize}
 
 
 \begin{figure}[tb]
