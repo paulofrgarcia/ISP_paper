@@ -471,10 +471,9 @@ field programmable gate array (FPGA), optimisations, power, image processing, da
 \IEEEpeerreviewmaketitle
 
 \input{tex/intro}
-\section{Background and related work}
-\section{}
-\section{}
-\section{}
+\section{Learning to approximate}
+\section{Case study: Extended Kalman Filter tracking}
+\section{Experimental results}
 \section{Conclusions and future work}
 
 

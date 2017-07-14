@@ -736,6 +736,29 @@ month={May},}
   publisher={IEEE}
 }
 
+@article{kulikov2016accurate,
+  title={The accurate continuous-discrete extended Kalman filter for radar tracking},
+  author={Kulikov, Gennady Yu and Kulikova, Maria V},
+  journal={IEEE Transactions on Signal Processing},
+  volume={64},
+  number={4},
+  pages={948--958},
+  year={2016},
+  publisher={IEEE}
+}
+
+@article{yazdanbakhsh2016mitigating,
+  title={Mitigating the memory bottleneck with approximate load value prediction},
+  author={Yazdanbakhsh, Amir and Thwaites, Bradley and Esmaeilzadeh, Hadi and Pekhimenko, Gennady and Mutlu, Onur and Mowry, Todd C},
+  journal={IEEE Design \& Test},
+  volume={33},
+  number={1},
+  pages={32--42},
+  year={2016},
+  publisher={IEEE}
+}
+
+
 @inproceedings{han2013approximate,
   title={Approximate computing: An emerging paradigm for energy-efficient design},
   author={Han, Jie and Orshansky, Michael},
@@ -781,6 +804,17 @@ month={May},}
   title={Automated high-level generation of low-power approximate computing circuits},
   author={Nepal, Kumud and Hashemi, Soheil and Tann, Hokchhay and Bahar, R Iris and Reda, Sherief},
   journal={IEEE Transactions on Emerging Topics in Computing},
+  year={2016},
+  publisher={IEEE}
+}
+
+@article{raha2016input,
+  title={Input-based dynamic reconfiguration of approximate arithmetic units for video encoding},
+  author={Raha, Arnab and Jayakumar, Hrishikesh and Raghunathan, Vijay},
+  journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+  volume={24},
+  number={3},
+  pages={846--857},
   year={2016},
   publisher={IEEE}
 }
