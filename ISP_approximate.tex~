@@ -474,7 +474,7 @@ field programmable gate array (FPGA), optimisations, power, image processing, da
 \input{tex/learning}
 \section{Case study: Extended Kalman Filter tracking}\label{casestudy}
 \section{Experimental results}\label{experiments}
-\section{Conclusions and future work}
+\section{Conclusions and future work}\label{conclusions}
 
 
 
