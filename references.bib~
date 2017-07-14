@@ -808,6 +808,18 @@ month={May},}
   publisher={IEEE}
 }
 
+@article{sinha2016low,
+  title={Low-Power FPGA Design Using Memoization-Based Approximate Computing},
+  author={Sinha, Sharad and Zhang, Wei},
+  journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+  volume={24},
+  number={8},
+  pages={2665--2678},
+  year={2016},
+  publisher={IEEE}
+}
+
+
 @article{raha2016input,
   title={Input-based dynamic reconfiguration of approximate arithmetic units for video encoding},
   author={Raha, Arnab and Jayakumar, Hrishikesh and Raghunathan, Vijay},
@@ -996,6 +1008,30 @@ month={Feb},}
   year={2016},
   publisher={ACM}
 }
+
+@inproceedings{chan2013statistical,
+  title={Statistical analysis and modeling for error composition in approximate computation circuits},
+  author={Chan, Wei-Ting J and Kahng, Andrew B and Kang, Seokhyeong and Kumar, Rakesh and Sartori, John},
+  booktitle={Computer Design (ICCD), 2013 IEEE 31st International Conference on},
+  pages={47--53},
+  year={2013},
+  organization={IEEE}
+}
+
+
+
+
+@inproceedings{vassiliadis2015programming,
+  title={A programming model and runtime system for significance-aware energy-efficient computing},
+  author={Vassiliadis, Vassilis and Parasyris, Konstantinos and Chalios, Charalambos and Antonopoulos, Christos D and Lalis, Spyros and Bellas, Nikolaos and Vandierendonck, Hans and Nikolopoulos, Dimitrios S},
+  booktitle={ACM SIGPLAN Notices},
+  volume={50},
+  number={8},
+  pages={275--276},
+  year={2015},
+  organization={ACM}
+}
+
 
 @inproceedings{venkataramani2013quality,
   title={Quality programmable vector processors for approximate computing},
