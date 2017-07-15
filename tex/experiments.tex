@@ -38,10 +38,36 @@ ATAN & 0.247 & 0.532 & 0.779 & 97.49\%\\
 \end{table}
 
 
-\par We ensured that during our RTL simulations, 100 iterations of the complete function are performed, using the same randomly generated input data for all versions, in order to obtain representative activity that ensures high confidence in the power estimation. Table \ref{table:power_profiles} depicts power consumption for the exact and each individual approximated version.
-4.1 power profiles
-4.2 results
+\par We ensured that during our RTL simulations, 100 iterations of the complete function are performed, using the same randomly generated input data for all versions, in order to obtain representative activity that ensures high confidence in the power estimation. Table \ref{table:power_profiles} depicts power consumption for the exact and each individual approximated version. Static power remains constant across approximations because the contribution of on-chip memories (BRAMs) dominates, and the number remains constant except for a small reduction when reducing bit widths. 
+\par Our next set of experiments started measuring the power consumption of versions that combine bit width reduction with several of the other approximations: results are presented in Table \ref{table:power_profiles_comb}.
 
+
+
+\begin{table}[h]
+\begin{tabular}{r c c}
+\toprule
+Approximations & Power (W) & \% of baseline\\
+\hline
+27FP \& COS & 						0,756	& 94.61\%\\
+27FP \& SIN & 						0,756	& 94.61\%\\
+27FP \& SQRT & 						0,767	& 95.99\%\\
+27FP \& ATAN & 						0,765	& 95.74\%\\
+27FP \& COS \& SIN & 				0,741	& 92.74\%\\
+27FP \& COS \& SQRT& 				0,767	& 95.99\%\\
+27FP \& COS \& ATAN & 				0,736	& 92.11\%\\
+27FP \& SIN \& SQRT & 				0,738	& 92.36\%\\
+27FP \& SIN \& ATAN & 				0,736	& 92.11\%\\
+27FP \& SQRT \& ATAN & 				0,747	& 93.49\%\\
+27FP \& COS \& SIN \& SQRT & 		0,709	& 88.73\%\\
+27FP \& COS \& SIN \& ATAN& 		0,707	& 88.48\%\\
+27FP \& COS \& SQRT \& ATAN& 		0,718	& 89.86\%\\
+27FP \& SIN \& SQRT \& ATAN  & 		0,718	& 89.86\%\\
+27FP \& COS \& SIN \& SQRT \& ATAN &0,689 	& 86.23\%\\
+\hline
+\end{tabular}
+\caption{Power profiles for combinations of different approximations.}
+\label{table:power_profiles_comb}
+\end{table}
 
 
 \subsection{Dynamic approximations using prior knowledge}
