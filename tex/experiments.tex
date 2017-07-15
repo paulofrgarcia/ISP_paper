@@ -46,28 +46,84 @@ ATAN & 0.247 & 0.532 & 0.779 & 97.49\%\\
 \begin{table}[h]
 \begin{tabular}{r c c}
 \toprule
-Approximations & Power (W) & \% of baseline\\
+Approximations (using 27FP) & Power (W) & \% of baseline\\
 \hline
-27FP \& COS & 						0,756	& 94.61\%\\
-27FP \& SIN & 						0,756	& 94.61\%\\
-27FP \& SQRT & 						0,767	& 95.99\%\\
-27FP \& ATAN & 						0,765	& 95.74\%\\
-27FP \& COS \& SIN & 				0,741	& 92.74\%\\
-27FP \& COS \& SQRT& 				0,767	& 95.99\%\\
-27FP \& COS \& ATAN & 				0,736	& 92.11\%\\
-27FP \& SIN \& SQRT & 				0,738	& 92.36\%\\
-27FP \& SIN \& ATAN & 				0,736	& 92.11\%\\
-27FP \& SQRT \& ATAN & 				0,747	& 93.49\%\\
-27FP \& COS \& SIN \& SQRT & 		0,709	& 88.73\%\\
-27FP \& COS \& SIN \& ATAN& 		0,707	& 88.48\%\\
-27FP \& COS \& SQRT \& ATAN& 		0,718	& 89.86\%\\
-27FP \& SIN \& SQRT \& ATAN  & 		0,718	& 89.86\%\\
-27FP \& COS \& SIN \& SQRT \& ATAN &0,689 	& 86.23\%\\
+COS & 						0.756	& 94.61\%\\
+SIN & 						0.756	& 94.61\%\\
+SQRT & 						0.767	& 95.99\%\\
+ATAN & 						0.765	& 95.74\%\\
+COS \& SIN & 				0.741	& 92.74\%\\
+COS \& SQRT& 				0.767	& 95.99\%\\
+COS \& ATAN & 				0.736	& 92.11\%\\
+SIN \& SQRT & 				0.738	& 92.36\%\\
+SIN \& ATAN & 				0.736	& 92.11\%\\
+SQRT \& ATAN & 				0.747	& 93.49\%\\
+COS \& SIN \& SQRT & 		0.709	& 88.73\%\\
+COS \& SIN \& ATAN& 		0.707	& 88.48\%\\
+COS \& SQRT \& ATAN& 		0.718	& 89.86\%\\
+SIN \& SQRT \& ATAN  & 		0.718	& 89.86\%\\
+COS \& SIN \& SQRT \& ATAN &0.689 	& 86.23\%\\
 \hline
 \end{tabular}
 \caption{Power profiles for combinations of different approximations.}
 \label{table:power_profiles_comb}
 \end{table}
+
+
+\par We use Matlab simulation to determine the accuracy of each combination, compared to the baseline. Table \ref{table:acc_profiles} depicts the accuracy of each version. Results in the "Absolute" tab are the mean and standard deviation ($\sigma$), respectively, of the absolute error (in meters) compared to the ground truth (real object position) in our simulation. Results in the "Accuracy" tab are the ratios, for mean and standard deviation, between the exact version results and the absolute value of the difference between exact and approximate results.
+    
+
+
+\begin{table}[h]
+\begin{tabular}{r c c c c}
+\toprule
+Version & \multicolumn{2}{c}{Absolute (m)} & \multicolumn{2}{c}{Accuracy (\%)}\\
+ & Mean & $\sigma$ & Mean & $\sigma$\\
+\hline
+Exact	& 0.5633 & 0.3092 & 100 & 100\\
+\hline
+COS & 						0.6742	& 0.2805	& 83.55 & 89.76 \\
+SIN & 						0.6524	& 0.3652	& 86.34 & 84.66 \\
+SQRT & 						0.6968	& 0.3764	& 80.84 & 82.14 \\
+ATAN & 						3.3520	& 1.7953	& 16.80 & 17.22 \\
+COS \& SIN & 				0.6044	& 0.3973	& 93.19 & 77.82 \\
+COS \& SQRT& 				0.7497	& 0.4101	& 75.13 & 75.39 \\
+COS \& ATAN & 				0.9771	& 0.6937	& 57.65 & 44.57 \\
+SIN \& SQRT & 				0.7353	& 0.3711	& 76.60 & 83.31 \\
+SIN \& ATAN & 				7.7667	& 2.5248	& 7.252 & 12.24 \\
+SQRT \& ATAN & 				1.4812	& 0.8149	& 38.02 & 37.94 \\
+COS \& SIN \& SQRT & 		0.5870	& 0.3680	& 95.96 & 84.02 \\
+COS \& SIN \& ATAN& 		1.7503	& 1.0135	& 32.18 & 30.50 \\
+COS \& SQRT \& ATAN& 		0.9949	& 0.7006	& 56.61 & 44.13 \\
+SIN \& SQRT \& ATAN  & 		7.7528	& 2.5424	& 7.265 & 12.16 \\
+COS \& SIN \& SQRT \& ATAN &1.8295 	& 1.0765	& 30.78 & 28.72 \\
+\hline
+\end{tabular}
+\caption{Accuracy profiles for combinations of different approximations. Exact version uses double floating point precision (64 bits); every other version uses 27 bits fied point precision.}
+\label{table:acc_profiles}
+\end{table}
+
+\par The final integrated version with configurable approximations, including clock gated logic, is compared against the baseline in Table \ref{table:integrated}.
+
+\begin{table}[h]
+\begin{tabular}{r c c c c c c c}
+\toprule
+ & \multicolumn{3}{c}{Power (W)} & \multicolumn{4}{c}{FPGA Resources}\\
+ & Static & Dynamic & Total & LUT & FF & DSP & BRAM\\
+\hline
+Exact & 0.247 & 0.552 & 0.799 & 46449 & 17666 & 61 & 55\\
+Approx. & 0.246 & 0.443 & 0.689 & 44995 & 16981 & 58 & 55\\
+\hline
+\end{tabular}
+\caption{Resource usage and ower consumption for baseline and final configurable approximations version.}
+\label{table:integrated}
+\end{table}
+
+
+
+
+
+
 
 
 \subsection{Dynamic approximations using prior knowledge}
