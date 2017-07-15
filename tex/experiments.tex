@@ -120,17 +120,44 @@ Approx. & 0.246 & 0.443 & 0.689 & 44995 & 16981 & 58 & 55\\
 \end{table}
 
 
-
-
-
-
-
-
-\subsection{Dynamic approximations using prior knowledge}
-
 \begin{figure}[tb]
   \centering
   \includegraphics[width=0.9\columnwidth]{img/experimental_flow.png}
   \caption{Experimental design flow.}
   \label{fig:experimental_flow}
+\end{figure}
+
+
+\subsection{Dynamic approximations using prior knowledge}
+The results of dynamically performing the approximation using the algorithms explained in Section \ref{learning} and \ref{sec:EKF} are detailed here. First, using the approximation results of each individual step, an "approximation level" is defined. To do this, various combinations of the micro approximations are sorted in ascending order according to their accuracy error. This results in a vector of tuples containing pairs of indexes (used as the approximation level) and strings indicating the approximation combination. 
+
+The first tuple in this vector corresponds to the approximation method, which generates the highest accuracy. Its last element, however, creates the weakest accuracy.
+At each filtering step, in order to use different approximation combinations, the approximation level is either increased or decreased. Determining whether to increment or decrement the approximation level is performed by evaluating the KL divergence result (\ref{eq:KLDIV2}).
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=0.9\columnwidth]{img/Tracks_plot_cropped.eps}
+  \caption{Every 100 iteration overlay plot of the tracks and true states for an overall 5000 iterations.}
+  \label{fig:track_res}
+\end{figure}
+
+The result of the overlay tracking plot using dynamic approximation in various iterations is shown in Fig.~\ref{fig:track_res} for a total number of iterations 5000. 
+The red ellipses represent the covariance matrix ${\bf \Sigma}_{X,k}$ (\ref{eq:correctCOV}) at every iteration, the blue circles show $[x_k, y_k]^\intercal$ and green asterisks with red dots are the locations of true states $[\bar{x}_k, \bar{y}_k]^\intercal$. 
+
+At every iteration, KL divergence is computed according to (\ref{eq:KLDIV2}), with sample stack size $N = 75$.  If it is less than a given threshold $T$ (for our results in Fig. \ref{fig:track_res}, $T = 0.5$) the approximation level is incremented. Otherwise, it is decremented to have a more precision tracking performance. The Euclidean distance between the found track and true state is computed for each iteration and shown in Fig.~\ref{fig:KL_and_err}-a, as well as the KL divergence in Fig.~\ref{fig:KL_and_err}-b. When the KL divergence goes above $T$ in Fig.~\ref{fig:KL_and_err}, the accuracy deteriorates. The approximation level is then immediately reduced in order to compensate the accuracy. Therefore, in only a few more iterations the accuracy again increases. This causes median accuracy error of 0.1661 (m) with median KL divergence 1.2098 for 5000 iterations.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[tb]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{img/Err_figure_cropped.eps}
+        \caption{}
+        \label{fig:gull}
+    \end{subfigure}
+    \begin{subfigure}[tb]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{img/KL_figure_cropped.eps}
+        \caption{}
+        \label{fig:tiger}
+    \end{subfigure}
+    \caption{(a) Euclidean distance between the true state and tracks; (b) Corresponding KL divergence.}
+    \label{fig:KL_and_err}
 \end{figure}
