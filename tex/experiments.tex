@@ -7,8 +7,44 @@ Fig. \ref{fig:experimental_flow} presents our methodology to obtain accuracy and
 
 
 \subsection{Power and Accuracy Profiles}\label{subsec:profiles}
+
+Algorithm-dependent approximations are modifications on the implementation of certain constructs, which vary from algorithm to algorithm. These can be complete re-writes of algorithm functionality; however, since our goal is to determine the validity of prior knowledge for runtime approximations, simple arithmetic re-writes suffice. We implemented four different re-writes:
+
+\begin{enumerate}
+\item COS re-write: cosine functions are replaced by quantized look-up tables. The HDL implementation of cosines is realized through a look-up table, but by re-writing at Matlab level, we can control the level of quantization: the approximated version is more quantized (i.e., requires fewer data) than the default Vivado HLS implementation.
+\item SIN re-write: identically to cosine, sine functions are re-written using a quantized loop-up table.
+\item SQRT re-write: the square root of the sum of squares $\sqrt{x^2+y^2}$, which requires two DSP multipliers and a look-up table for the square root, is replaced by a sum of absolutes $\left| x\right|+\left| y\right|$, which requires only two conversions to unsigned and an adder.
+\item ATAN re-write: the arc tangent function, realized by default through a look up table, is approximated through the first three terms of a Taylor series, requiring only arithmetic operations.
+\end{enumerate}
+
+\par We detailed several algorithm-independent approximations in Section \ref{learning}. In our experiments, we implemented bit width reduction, from floating to fixed point. The default bit width is 64 bits (Matlab generates double precision floating point operations). Our approximations replaces 64 bits data with fixed point 27 bits data (15 integer and 12 fractional bits). This is one of the fixed point bit widths recommended for power reductions in the Virtex 7 family. 
+
+\begin{table}[h]
+\begin{tabular}{r c c c c}
+\toprule
+Version & \multicolumn{3}{c}{Power (W)} & \% of baseline\\
+ & Static & Dynamic & Total &\\
+\hline
+Exact & 0.247 & 0.552 & 0.799 & 100\%\\
+COS & 0.247 & 0.523 & 0.770 & 96.37\%\\
+SIN & 0.247 & 0.523 & 0.770 & 96.37\%\\
+SQRT & 0.247 & 0.534 & 0.781 & 97.74\%\\
+ATAN & 0.247 & 0.532 & 0.779 & 97.49\%\\
+27 bits Fixed Point & 0.246 & 0.538 & 0.785 & 98.24\%\\
+\hline
+\end{tabular}
+\caption{Power profiles for exact and each individual approximation.}
+\label{table:power_profiles}
+\end{table}
+
+
+\par We ensured that during our RTL simulations, 100 iterations of the complete function are performed, using the same randomly generated input data for all versions, in order to obtain representative activity that ensures high confidence in the power estimation. Table \ref{table:power_profiles} depicts power consumption for the exact and each individual approximated version.
 4.1 power profiles
 4.2 results
+
+
+
+\subsection{Dynamic approximations using prior knowledge}
 
 \begin{figure}[tb]
   \centering
