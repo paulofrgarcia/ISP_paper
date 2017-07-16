@@ -5,6 +5,12 @@ Fig. \ref{fig:experimental_flow} presents our methodology to obtain accuracy and
 \par RTL simulation and FPGA synthesis (we target Virtex 7 technology) is performed through Xilinx Vivado Design Suite to obtain resource usage and power consumption. Power consumption is estimated through Xilinx Power Estimator tool embedded in Vivado, which uses resource usage information and switching rates obtained from RTL simulation to calculate a high accuracy measure of power consumption. This step enables us to obtain power profiles for each approximation.
 \par The final step combines the various versions into one configurable solution. This is an FPGA implementation which combines accurate and approximated versions, where the level of approximations can be configured and modified at runtime. Unused logic (e.g., an exact version of some operation when running in corresponding approximate mode) is clock gated to eliminate dynamic power consumption. This version is then used to obtain results for dynamic approximations by the approximation engine using prior knowledge.  
 
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=0.9\columnwidth]{img/experimental_flow.png}
+  \caption{Experimental design flow.}
+  \label{fig:experimental_flow}
+\end{figure}
 
 \subsection{Power and Accuracy Profiles}\label{subsec:profiles}
 
@@ -120,12 +126,7 @@ Approx. & 0.246 & 0.443 & 0.689 & 44995 & 16981 & 58 & 55\\
 \end{table}
 
 
-\begin{figure}[tb]
-  \centering
-  \includegraphics[width=0.9\columnwidth]{img/experimental_flow.png}
-  \caption{Experimental design flow.}
-  \label{fig:experimental_flow}
-\end{figure}
+
 
 
 \subsection{Dynamic approximations using prior knowledge}

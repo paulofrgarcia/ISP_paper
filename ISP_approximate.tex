@@ -475,7 +475,8 @@ field programmable gate array (FPGA), optimisations, power, image processing, da
 \input{tex/EKFExplanation}
 \input{tex/experiments}
 \section{Conclusions and future work}\label{conclusions}
-
+We have described the use of prior knowledge to perform runtime approximations, without access to ground truth. Our experiments, on a tracking application using EKF, demonstrate that prior knowledge can indeed be used to ensure that accuracy is within acceptable bounds, without having to perform empirical evaluations based on representative test data. Our results support the conclusion that approximate computing need not be limited to design time: thus enabling power optimisations with the same degree of runtime configuration as traditional performance optimisations.
+\par Future work will address three limitations of our study: (a) the approximation engine, which leverages prior knowledge, is external to the test system: hence, its power contribution was not modeled. We will integrate a hardware version embedded in the processing pipeline so power evaluation is completely accurate. (b) the utilized approximations are \textit{ad hoc} heuristics, and result in a poor theoretical lower limit to power consumption (86.23\%). We will adopt more sophisticated approximation methodologies, using state of the art automated tools and benchmarks, in order to obtain greater power savings. (c) We have only modeled one case study; we will experiment with several different algorithms from various domains in order to evaluate the coverage of our approach, in function of different types of application-specific prior knowledge.
 
 
 %\par This paper presents two main contributions:
