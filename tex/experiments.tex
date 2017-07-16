@@ -161,3 +161,13 @@ At every iteration, KL divergence is computed according to (\ref{eq:KLDIV2}), wi
     \caption{(a) Euclidean distance between the true state and tracks; (b) Corresponding KL divergence.}
     \label{fig:KL_and_err}
 \end{figure}
+
+Using the power profiles in Table \ref{table:power_profiles_comb}, the consumed energy of each approximation can be computed by multiplying the power with the time resolution ($\Delta t = 0.1$ (s)). The accumulated energy is plotted in Fig. \ref{fig:Energy_res_acc} for all of the 5000 iterations. 
+The baseline which consumes a constant power of 0.799 (W), results in a total of $\approx 3935$ (J). However, the accumulated energy consumption for the dynamic approximation case is $\approx 384$ (J). This shows about $\times 10$ energy save.
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=1\columnwidth]{img/Energy_cropped.eps}
+  \caption{Accumulated energy consumption for the baseline (no approximation) and dynamic approximation, in red and blue, respectively.}
+  \label{fig:Energy_res_acc}
+\end{figure}

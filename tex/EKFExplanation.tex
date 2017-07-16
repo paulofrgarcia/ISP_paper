@@ -1,6 +1,6 @@
 \section{Case study: Extended Kalman Filter tracking}
 \label{sec:EKF}
-The proposed approximate computing algorithm is evaluated for a non-linear, Gaussian, single-target tracking problem. It is assumed that the target is circularly rotating over the $xy$-plane. In order to have the paper self-contained as much as possible and to simplify explaining the points at which approximation is imposed the equations of such motion model and EKF provided in this paper.
+The proposed approximate computing algorithm is evaluated for a non-linear, Gaussian, single-target tracking problem. It is assumed that the target is circularly rotating over the $xy$-plane. In order to have the paper self-contained as much as possible and to simplify explaining the points at which approximation is imposed, the motion model and EKF equations are detailed in this section.
 
 It is assumed that the sensor measures the range and bearing (azimuth) of the target in meters and radians, respectively, which are as follows,
 
@@ -23,7 +23,7 @@ r_k = \sqrt{\bar{x}_k^2 + \bar{y}_k^2} + n_{r_k} \\
   \label{fig:TrackScene}
 \end{figure}
 
-It is assumed that at time $k$, the target has a three dimensional state vector ${\bf X}_k = [x_k, y_k, \theta_k]^\intercal$, in which $[x_k, y_k]$ and $theta_k$ are the position and pose states of the target, respectively. This is shown in Fig.~\ref{fig:TrackScene}. The state estimation equations are,
+It is assumed that at time $k$, the target has a three dimensional state vector ${\bf X}_k = [x_k, y_k, \theta_k]^\intercal$, in which $[x_k, y_k]$ and $\theta_k$ are the position and pose states of the target, respectively. This is shown in Fig.~\ref{fig:TrackScene}. The state estimation equations are,
 
 \begin{equation}
 \left\{
