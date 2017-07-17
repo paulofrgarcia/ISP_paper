@@ -36,7 +36,7 @@ It is assumed that at time $k$, the target has a three dimensional state vector 
 \label{eq:State}
 \end{equation}
 
-\noindent ${\bf u}_k = [v_k, w_k]$ is the speed vector containing the radial and angular speed parameters in m$/$sec and rad$/$sec, respectively, and $\Delta t$ is the time update resolution in seconds. $\hat{{\bf X}}_k = [\hat{x}_k, \hat{y}_k, \hat{\theta}_k]^\intercal$ is the estimated state vector for the $k^{th}$ iteration. ${\bf M}_k = [m_{x_k}, m_{y_k}, m_{\theta_k}]^\intercal$ is a random vector sampled from a Gaussian distribution with zero mean. 
+\noindent ${\bf u}_k = [v_k, w_k]$ is the speed vector containing the radial and angular speed parameters in m$/$sec and rad$/$sec, respectively, and $\Delta t$ is the time update resolution in sec. $\hat{{\bf X}}_k = [\hat{x}_k, \hat{y}_k, \hat{\theta}_k]^\intercal$ is the estimated state vector for the $k^{th}$ iteration. ${\bf M}_k = [m_{x_k}, m_{y_k}, m_{\theta_k}]^\intercal$ is a random vector sampled from a Gaussian distribution with zero mean. 
 
 Due to the non-linearity in (\ref{eq:Meas}) and (\ref{eq:State}), Gaussianity will not be preserved and therefore, a linear approximation is used based on Taylor series expansion. 
 The Jacobian matrix for the estimation step will be,
