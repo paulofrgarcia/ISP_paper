@@ -105,27 +105,39 @@ SIN \& SQRT \& ATAN  & 		7.7528	& 2.5424	& 7.265 \\
 COS \& SIN \& SQRT \& ATAN &1.8295 	& 1.0765	& 30.78 \\
 \hline
 \end{tabular}
-\caption{Accuracy profiles for combinations of different approximations, for 5000 iterations. Exact version uses double floating point precision (64 bits); every other version uses 27 bits fixed point precision.}
+\caption{Accuracy profiles for combinations of different approximations, for 100 iterations. Exact version uses double floating point precision (64 bits); every other version uses 27 bits fixed point precision.}
 \label{table:acc_profiles}
 \end{table}
 
 \par The final integrated version with configurable approximations, including clock gated logic, is compared against the baseline in Table \ref{table:integrated}.
 
+%\begin{table}[h]
+%\begin{tabular}{r c c c c c c c}
+%\toprule
+% & \multicolumn{3}{c}{Power (W)} & \multicolumn{4}{c}{FPGA Resources}\\
+% & Static & Dynamic & Total & LUT & FF & DSP & BRAM\\
+%\hline
+%Exact & 0.247 & 0.552 & 0.799 & 46449 & 17666 & 61 & 55\\
+%Approx. & 0.246 & 0.443 & 0.689 & 44995 & 16981 & 58 & 55\\
+%\hline
+%\end{tabular}
+%\caption{Resource usage and ower consumption for baseline and final configurable approximations version.}
+%\label{table:integrated}
+%\end{table}
+
 \begin{table}[h]
-\begin{tabular}{r c c c c c c c}
+\begin{tabular}{r c c c c c}
 \toprule
- & \multicolumn{3}{c}{Power (W)} & \multicolumn{4}{c}{FPGA Resources}\\
- & Static & Dynamic & Total & LUT & FF & DSP & BRAM\\
+ & Power (W) & \multicolumn{4}{c}{FPGA Resources}\\
+ & Total & LUT & FF & DSP & BRAM\\
 \hline
-Exact & 0.247 & 0.552 & 0.799 & 46449 & 17666 & 61 & 55\\
-Approx. & 0.246 & 0.443 & 0.689 & 44995 & 16981 & 58 & 55\\
+Exact & 0.799 & 46449 & 17666 & 61 & 55\\
+Approx. & 0.689 & 44995 & 16981 & 58 & 55\\
 \hline
 \end{tabular}
 \caption{Resource usage and ower consumption for baseline and final configurable approximations version.}
 \label{table:integrated}
 \end{table}
-
-
 
 
 
@@ -174,31 +186,31 @@ At each filtering step, in order to use different approximation combinations, th
 
 
 
-\begin{figure}
-    \centering
-    \begin{subfigure}[tb]{0.2\textwidth}
-        \includegraphics[width=\textwidth]{img/Hist_KL_0_5.png}
-        \caption{}
+%\begin{figure}
+%    \centering
+%    \begin{subfigure}[tb]{0.2\textwidth}
+%        \includegraphics[width=\textwidth]{img/Hist_KL_0_5.png}
+%        \caption{}
+%        %\label{fig:gull}
+%    \end{subfigure}
+%    \begin{subfigure}[tb]{0.2\textwidth}
+%        \includegraphics[width=\textwidth]{img/Hist_KL_1.png}
+%        \caption{}
+%        %\label{fig:tiger}
+%    \end{subfigure}
+%        \begin{subfigure}[tb]{0.2\textwidth}
+%        \includegraphics[width=\textwidth]{img/Hist_KL_2.png}
+%        \caption{}
         %\label{fig:gull}
-    \end{subfigure}
-    \begin{subfigure}[tb]{0.2\textwidth}
-        \includegraphics[width=\textwidth]{img/Hist_KL_1.png}
-        \caption{}
-        %\label{fig:tiger}
-    \end{subfigure}
-        \begin{subfigure}[tb]{0.2\textwidth}
-        \includegraphics[width=\textwidth]{img/Hist_KL_2.png}
-        \caption{}
+%    \end{subfigure}
+%        \begin{subfigure}[tb]{0.2\textwidth}
+%        \includegraphics[width=\textwidth]{img/Hist_KL_3.png}
+%        \caption{}
         %\label{fig:gull}
-    \end{subfigure}
-        \begin{subfigure}[tb]{0.2\textwidth}
-        \includegraphics[width=\textwidth]{img/Hist_KL_3.png}
-        \caption{}
-        %\label{fig:gull}
-    \end{subfigure}
-    \caption{Histogram of approximation levels using KL divergence threshold in Fig.~\ref{fig:track_res}: (a) 0.5, (b) 1, (c) 2, (d) 3.}
-    \label{fig:track_hist}
-\end{figure}
+ %   \end{subfigure}
+ %   \caption{Histogram of approximation levels using KL divergence threshold in Fig.~\ref{fig:track_res}: (a) 0.5, (b) 1, (c) 2, (d) 3.}
+ %   \label{fig:track_hist}
+%\end{figure}
 
 
 
@@ -213,10 +225,12 @@ At each filtering step, in order to use different approximation combinations, th
 
 
 
-The result of the overlay tracking plot using dynamic approximation in various iterations is shown in Fig.~\ref{fig:track_res} for a total number of iterations 5000. 
-The red ellipses represent the covariance matrix ${\bf \Sigma}_{X,k}$ (\ref{eq:correctCOV}) at every iteration, the blue circles show $[x_k, y_k]^\intercal$ and green asterisks with red dots are the locations of true states $[\bar{x}_k, \bar{y}_k]^\intercal$. 
+The result of the overlay tracking plot using dynamic approximation in various iterations is shown in Fig.~\ref{fig:track_res}. 
+%The red ellipses represent the covariance matrix ${\bf \Sigma}_{X,k}$ (\ref{eq:correctCOV}) at every iteration, the blue circles show $[x_k, y_k]^\intercal$ and green asterisks with red dots are the locations of true states $[\bar{x}_k, \bar{y}_k]^\intercal$. 
+Red shows ground truth, green shows tracking without approximation and blue shows tracking after approximation, using KL divergence thresholds of 0.5, 1, 2, 3.
 
-At every iteration, KL divergence is computed according to (\ref{eq:KLDIV2}), with sample stack size $N = 75$.  If it is less than a given threshold $T$ (for our results in Fig. \ref{fig:track_res}, $T = 0.5$) the approximation level is incremented; otherwise, it is decremented to have a more precision tracking performance. The Euclidean distance between the found track and true state is computed for each iteration and shown in Fig.~\ref{fig:KL_and_err}-a, as well as the KL divergence in Fig.~\ref{fig:KL_and_err}-b. When the KL divergence goes above $T$ in Fig.~\ref{fig:KL_and_err}, the accuracy deteriorates. The approximation level is then immediately reduced in order to compensate the accuracy. Therefore, in only a few more iterations the accuracy again increases. This causes median accuracy error of 0.1661 (m) with median KL divergence 1.2098 for 5000 iterations.
+At every iteration, KL divergence is computed according to (\ref{eq:KLDIV2}), with sample stack size $N = 75$.  If it is less than a given threshold $T$ (for our results in Fig. \ref{fig:track_res}, $T = 0.5$, 1, 2 and 3) the approximation level is incremented; otherwise, it is decremented to have a more precision tracking performance. %Fig. \ref{fig:track_hist} displays histograms of approximation levels, corresponding to the results in Fig. \ref{fig:track_res}. 
+The Euclidean distance between the found track and true state is computed for each iteration and shown in Fig.~\ref{fig:KL_and_err}-a, as well as the KL divergence in Fig.~\ref{fig:KL_and_err}-b. When the KL divergence goes above $T$ in Fig.~\ref{fig:KL_and_err}, the accuracy deteriorates. The approximation level is then immediately reduced in order to compensate the accuracy. Therefore, in only a few more iterations the accuracy again increases. This causes median accuracy error of 0.1661 (m) with median KL divergence 1.2098 for 5000 iterations.
 
 \begin{figure}
     \centering
