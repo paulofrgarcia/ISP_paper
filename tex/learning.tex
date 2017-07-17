@@ -1,24 +1,7 @@
-\section{Learning to approximate}\label{learning}
+\section{Approximation methodology}\label{learning}
 
 Our methodology is based on equipping the processing pipeline with variable levels of approximation, i.e., configurable approximations, and an approximation engine within a supervisor block (which may contain additional optimisations such as parameter tuning): a block diagram is depicted in Fig. \ref{fig:block_diagram}. Depending on the application and the deployment technology (e.g., CPU, ASIC, FPGA) the nature of approximations varies, but our method is applicable across the entire spectrum. Traditional approximation methods include bit width reduction \cite{mittal2016survey}, memoisation \cite{sinha2016low}, predictive memory access \cite{yazdanbakhsh2016mitigating}, arithmetic re-writes \cite{nepal2016automated}, input-based approximations \cite{raha2016input}, etc.
 \par Based on prior knowledge about the data, our approximation engine dynamically monitors the processing pipeline's output, and verifies whether or not the calculations still obey the assumptions about the data. If yes, then it is assumed that current levels of accuracy are still within error bounds: hence, the pipeline can be approximated further. If not, then it is assumed that accuracy has exceeded error bounds, and the level of approximation is reduced. Using this method, it is possible to converge on an approximation strategy that optimises power consumption \textit{in situ}, without access to ground truth. 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% Mehryar's notes
-\par Such comparison with the prior knowledge can be performed in various ways. 
-For an iterative filtering, which estimates and corrects the state of the object using the obtained measurements, the prior knowledge can be defined using the target's motion. Any deviation from this known model can be used to compromise over approximation during run-time. 
-
-One solution to quantify such model is to stack state vectors for a given number of consecutive iterations. Then estimating the statistics of the stacked tracks, using either a parametric or non-parametric approaches, can be used to map the result to our prior knowledge. 
-
-To be more specific, in this paper, we use a parametric approach to approximate the probability density function (PDF) of the stacked target states from iteration $k$ to $k+N$, i.e. ${\bf s}_{k:k+N}$. 
-Our prior knowledge is then compared with the computed approximated PDF. In our work, we use Kullback–Leibler (KL) divergence to perform this task as follows,
-
-\begin{equation}
-D_{KL}({\bf H}_{k, N} || {\bf H}_{p}) = \sum_{i}{{\bf H}_{k, N}} \log{\frac{{\bf H}_{k, N}}{{\bf H}_{p}}}
-\label{eq:KLDIV1}
-\end{equation}
-
-\noindent in which ${\bf H}_{k, N}$ is the approximated PDF of the $k^{th}$ to $(k+N)^{th}$ state samples and ${\bf H}_{p}$ is the "prior knowledge" PDF of the target's motion.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% End of Mehryar's notes
 
 \par Our approach is predicated on runtime-configurable levels of approximation. In software solutions running on CPUs and GPUs, this can be achieved through different software versions \cite{vassiliadis2015programming} or through Instruction Set Architecture (ISA) level approximations \cite{venkataramani2013quality}. In bespoke hardware solutions implemented on ASIC or FPGA, through configurable hardware versions which clock- or power-gate accurate circuitry; this is the approach we use on our experiments, which we detail in Section \ref{experiments}.
 
